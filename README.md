@@ -8,4 +8,3 @@ Standard financial optimizer
 [![PyPI](https://img.shields.io/pypi/v/finance-opt.svg)](https://pypi.python.org/pypi/finance-opt)
 
 ## Overview
-
