@@ -31,7 +31,10 @@ classifiers = [
     "Programming Language :: Python :: 3.14",
 ]
 
-dependencies = []
+dependencies = [
+    "numpy>=1.26",
+    "pydantic>=2",
+]
 
 [project.optional-dependencies]
 develop = [
