@@ -8,7 +8,7 @@ fn solve_mean_variance(
     max_iterations: usize,
     tolerance: f64,
 ) -> PyResult<Vec<f64>> {
-    finance_opt::solve_mean_variance(
+    ::finance_opt::solve_mean_variance(
         &expected_returns,
         &covariance,
         risk_aversion,
