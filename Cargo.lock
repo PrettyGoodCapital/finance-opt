@@ -3,14 +3,14 @@
 version = 4
 
 [[package]]
-name = "finance_opt"
+name = "finance-opt"
 version = "0.1.0"
 
 [[package]]
 name = "finance_opt_py"
 version = "0.1.0"
 dependencies = [
- "finance_opt",
+ "finance-opt",
  "pyo3",
 ]
 
