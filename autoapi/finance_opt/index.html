@@ -3,7 +3,7 @@
   <head><meta charset="utf-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <meta name="color-scheme" content="light dark"><meta name="viewport" content="width=device-width, initial-scale=1" />
-<link rel="index" title="Index" href="../../genindex.html"><link rel="search" title="Search" href="../../search.html"><link rel="prev" title="test_all" href="../test_all/index.html">
+<link rel="index" title="Index" href="../../genindex.html"><link rel="search" title="Search" href="../../search.html"><link rel="next" title="finance_opt.optimization" href="optimization/index.html"><link rel="prev" title="test_all" href="../test_all/index.html">
 
     <!-- Generated with Sphinx 8.2.3 and Furo 2025.12.19 -->
         <title>finance_opt - finance opt v0.1.0</title>
@@ -199,7 +199,11 @@
   <ul class="current">
 <li class="toctree-l1 current has-children"><a class="reference internal" href="../index.html">API Reference</a><input aria-label="Toggle navigation of API Reference" checked="" class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" role="switch" type="checkbox"/><label for="toctree-checkbox-1"><span class="icon"><svg><use href="#svg-arrow-right"></use></svg></span></label><ul class="current">
 <li class="toctree-l2"><a class="reference internal" href="../test_all/index.html">test_all</a></li>
-<li class="toctree-l2 current current-page"><a class="current reference internal" href="#">finance_opt</a></li>
+<li class="toctree-l2 current has-children current-page"><a class="current reference internal" href="#">finance_opt</a><input aria-label="Toggle navigation of finance_opt" checked="" class="toctree-checkbox" id="toctree-checkbox-2" name="toctree-checkbox-2" role="switch" type="checkbox"/><label for="toctree-checkbox-2"><span class="icon"><svg><use href="#svg-arrow-right"></use></svg></span></label><ul>
+<li class="toctree-l3"><a class="reference internal" href="optimization/index.html">finance_opt.optimization</a></li>
+<li class="toctree-l3"><a class="reference internal" href="schemas/index.html">finance_opt.schemas</a></li>
+</ul>
+</li>
 </ul>
 </li>
 </ul>
@@ -242,13 +246,37 @@
         <article role="main" id="furo-main-content">
           <section id="module-finance_opt">
 <span id="finance-opt"></span><h1>finance_opt<a class="headerlink" href="#module-finance_opt" title="Link to this heading">¶</a></h1>
-<section id="attributes">
-<h2>Attributes<a class="headerlink" href="#attributes" title="Link to this heading">¶</a></h2>
+<section id="submodules">
+<h2>Submodules<a class="headerlink" href="#submodules" title="Link to this heading">¶</a></h2>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="optimization/index.html">finance_opt.optimization</a></li>
+<li class="toctree-l1"><a class="reference internal" href="schemas/index.html">finance_opt.schemas</a></li>
+</ul>
+</div>
+</section>
+<section id="classes">
+<h2>Classes<a class="headerlink" href="#classes" title="Link to this heading">¶</a></h2>
 <div class="table-wrapper autosummary longtable docutils container">
 <table class="autosummary longtable docutils align-default">
 <tbody>
-<tr class="row-odd"><td><p><a class="reference internal" href="#finance_opt.__version__" title="finance_opt.__version__"><code class="xref py py-obj docutils literal notranslate"><span class="pre">__version__</span></code></a></p></td>
-<td><p></p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="#finance_opt.ConstraintSpec" title="finance_opt.ConstraintSpec"><code class="xref py py-obj docutils literal notranslate"><span class="pre">ConstraintSpec</span></code></a></p></td>
+<td><p>!!! abstract &quot;Usage Documentation&quot;</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#finance_opt.ObjectiveSpec" title="finance_opt.ObjectiveSpec"><code class="xref py py-obj docutils literal notranslate"><span class="pre">ObjectiveSpec</span></code></a></p></td>
+<td><p>!!! abstract &quot;Usage Documentation&quot;</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#finance_opt.OptimizationProblem" title="finance_opt.OptimizationProblem"><code class="xref py py-obj docutils literal notranslate"><span class="pre">OptimizationProblem</span></code></a></p></td>
+<td><p>!!! abstract &quot;Usage Documentation&quot;</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#finance_opt.OptimizationResult" title="finance_opt.OptimizationResult"><code class="xref py py-obj docutils literal notranslate"><span class="pre">OptimizationResult</span></code></a></p></td>
+<td><p>!!! abstract &quot;Usage Documentation&quot;</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#finance_opt.OptimizerConfig" title="finance_opt.OptimizerConfig"><code class="xref py py-obj docutils literal notranslate"><span class="pre">OptimizerConfig</span></code></a></p></td>
+<td><p>!!! abstract &quot;Usage Documentation&quot;</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#finance_opt.TradingCostSpec" title="finance_opt.TradingCostSpec"><code class="xref py py-obj docutils literal notranslate"><span class="pre">TradingCostSpec</span></code></a></p></td>
+<td><p>!!! abstract &quot;Usage Documentation&quot;</p></td>
 </tr>
 </tbody>
 </table>
@@ -256,10 +284,999 @@
 </section>
 <section id="package-contents">
 <h2>Package Contents<a class="headerlink" href="#package-contents" title="Link to this heading">¶</a></h2>
-<dl class="py data">
-<dt class="sig sig-object py" id="finance_opt.__version__">
-<span class="sig-prename descclassname"><span class="pre">finance_opt.</span></span><span class="sig-name descname"><span class="pre">__version__</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">'0.1.0'</span></em><a class="headerlink" href="#finance_opt.__version__" title="Link to this definition">¶</a></dt>
+<dl class="py class">
+<dt class="sig sig-object py" id="finance_opt.ConstraintSpec">
+<em class="property"><span class="k"><span class="pre">class</span></span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">finance_opt.</span></span><span class="sig-name descname"><span class="pre">ConstraintSpec</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">/</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">**data:</span> <span class="pre">Any</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="../../_modules/finance_opt/schemas.html#ConstraintSpec"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#finance_opt.ConstraintSpec" title="Link to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-obj docutils literal notranslate"><span class="pre">pydantic.BaseModel</span></code></p>
+<dl class="simple">
+<dt>!!! abstract “Usage Documentation”</dt><dd><p>[Models](../concepts/models.md)</p>
+</dd>
+</dl>
+<p>A base class for creating Pydantic models.</p>
+<dl class="py attribute">
+<dt class="sig sig-object py" id="finance_opt.ConstraintSpec.__class_vars__">
+<span class="sig-name descname"><span class="pre">__class_vars__</span></span><a class="headerlink" href="#finance_opt.ConstraintSpec.__class_vars__" title="Link to this definition">¶</a></dt>
+<dd><p>The names of the class variables defined on the model.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="finance_opt.ConstraintSpec.__private_attributes__">
+<span class="sig-name descname"><span class="pre">__private_attributes__</span></span><a class="headerlink" href="#finance_opt.ConstraintSpec.__private_attributes__" title="Link to this definition">¶</a></dt>
+<dd><p>Metadata about the private attributes of the model.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="finance_opt.ConstraintSpec.__signature__">
+<span class="sig-name descname"><span class="pre">__signature__</span></span><a class="headerlink" href="#finance_opt.ConstraintSpec.__signature__" title="Link to this definition">¶</a></dt>
+<dd><p>The synthesized <cite>__init__</cite> [<cite>Signature</cite>][inspect.Signature] of the model.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="finance_opt.ConstraintSpec.__pydantic_complete__">
+<span class="sig-name descname"><span class="pre">__pydantic_complete__</span></span><a class="headerlink" href="#finance_opt.ConstraintSpec.__pydantic_complete__" title="Link to this definition">¶</a></dt>
+<dd><p>Whether model building is completed, or if there are still undefined fields.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="finance_opt.ConstraintSpec.__pydantic_core_schema__">
+<span class="sig-name descname"><span class="pre">__pydantic_core_schema__</span></span><a class="headerlink" href="#finance_opt.ConstraintSpec.__pydantic_core_schema__" title="Link to this definition">¶</a></dt>
+<dd><p>The core schema of the model.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="finance_opt.ConstraintSpec.__pydantic_custom_init__">
+<span class="sig-name descname"><span class="pre">__pydantic_custom_init__</span></span><a class="headerlink" href="#finance_opt.ConstraintSpec.__pydantic_custom_init__" title="Link to this definition">¶</a></dt>
+<dd><p>Whether the model has a custom <cite>__init__</cite> function.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="finance_opt.ConstraintSpec.__pydantic_decorators__">
+<span class="sig-name descname"><span class="pre">__pydantic_decorators__</span></span><a class="headerlink" href="#finance_opt.ConstraintSpec.__pydantic_decorators__" title="Link to this definition">¶</a></dt>
+<dd><p>Metadata containing the decorators defined on the model.
+This replaces <cite>Model.__validators__</cite> and <cite>Model.__root_validators__</cite> from Pydantic V1.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="finance_opt.ConstraintSpec.__pydantic_generic_metadata__">
+<span class="sig-name descname"><span class="pre">__pydantic_generic_metadata__</span></span><a class="headerlink" href="#finance_opt.ConstraintSpec.__pydantic_generic_metadata__" title="Link to this definition">¶</a></dt>
+<dd><p>A dictionary containing metadata about generic Pydantic models.
+The <cite>origin</cite> and <cite>args</cite> items map to the [<cite>__origin__</cite>][genericalias.__origin__]
+and [<cite>__args__</cite>][genericalias.__args__] attributes of [generic aliases][types-genericalias],
+and the <cite>parameter</cite> item maps to the <cite>__parameter__</cite> attribute of generic classes.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="finance_opt.ConstraintSpec.__pydantic_parent_namespace__">
+<span class="sig-name descname"><span class="pre">__pydantic_parent_namespace__</span></span><a class="headerlink" href="#finance_opt.ConstraintSpec.__pydantic_parent_namespace__" title="Link to this definition">¶</a></dt>
+<dd><p>Parent namespace of the model, used for automatic rebuilding of models.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="finance_opt.ConstraintSpec.__pydantic_post_init__">
+<span class="sig-name descname"><span class="pre">__pydantic_post_init__</span></span><a class="headerlink" href="#finance_opt.ConstraintSpec.__pydantic_post_init__" title="Link to this definition">¶</a></dt>
+<dd><p>The name of the post-init method for the model, if defined.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="finance_opt.ConstraintSpec.__pydantic_root_model__">
+<span class="sig-name descname"><span class="pre">__pydantic_root_model__</span></span><a class="headerlink" href="#finance_opt.ConstraintSpec.__pydantic_root_model__" title="Link to this definition">¶</a></dt>
+<dd><p>Whether the model is a [<cite>RootModel</cite>][pydantic.root_model.RootModel].</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="finance_opt.ConstraintSpec.__pydantic_serializer__">
+<span class="sig-name descname"><span class="pre">__pydantic_serializer__</span></span><a class="headerlink" href="#finance_opt.ConstraintSpec.__pydantic_serializer__" title="Link to this definition">¶</a></dt>
+<dd><p>The <cite>pydantic-core</cite> <cite>SchemaSerializer</cite> used to dump instances of the model.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="finance_opt.ConstraintSpec.__pydantic_validator__">
+<span class="sig-name descname"><span class="pre">__pydantic_validator__</span></span><a class="headerlink" href="#finance_opt.ConstraintSpec.__pydantic_validator__" title="Link to this definition">¶</a></dt>
+<dd><p>The <cite>pydantic-core</cite> <cite>SchemaValidator</cite> used to validate instances of the model.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="finance_opt.ConstraintSpec.__pydantic_fields__">
+<span class="sig-name descname"><span class="pre">__pydantic_fields__</span></span><a class="headerlink" href="#finance_opt.ConstraintSpec.__pydantic_fields__" title="Link to this definition">¶</a></dt>
+<dd><p>A dictionary of field names and their corresponding [<cite>FieldInfo</cite>][pydantic.fields.FieldInfo] objects.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="finance_opt.ConstraintSpec.__pydantic_computed_fields__">
+<span class="sig-name descname"><span class="pre">__pydantic_computed_fields__</span></span><a class="headerlink" href="#finance_opt.ConstraintSpec.__pydantic_computed_fields__" title="Link to this definition">¶</a></dt>
+<dd><p>A dictionary of computed field names and their corresponding [<cite>ComputedFieldInfo</cite>][pydantic.fields.ComputedFieldInfo] objects.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="finance_opt.ConstraintSpec.__pydantic_extra__">
+<span class="sig-name descname"><span class="pre">__pydantic_extra__</span></span><a class="headerlink" href="#finance_opt.ConstraintSpec.__pydantic_extra__" title="Link to this definition">¶</a></dt>
+<dd><p>A dictionary containing extra values, if [<cite>extra</cite>][pydantic.config.ConfigDict.extra]
+is set to <cite>‘allow’</cite>.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="finance_opt.ConstraintSpec.__pydantic_fields_set__">
+<span class="sig-name descname"><span class="pre">__pydantic_fields_set__</span></span><a class="headerlink" href="#finance_opt.ConstraintSpec.__pydantic_fields_set__" title="Link to this definition">¶</a></dt>
+<dd><p>The names of fields explicitly set during instantiation.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="finance_opt.ConstraintSpec.__pydantic_private__">
+<span class="sig-name descname"><span class="pre">__pydantic_private__</span></span><a class="headerlink" href="#finance_opt.ConstraintSpec.__pydantic_private__" title="Link to this definition">¶</a></dt>
+<dd><p>Values of private attributes set on the model instance.</p>
+</dd></dl>
+
+<p>Create a new model by parsing and validating input data from keyword arguments.</p>
+<p>Raises [<cite>ValidationError</cite>][pydantic_core.ValidationError] if the input data cannot be
+validated to form a valid model.</p>
+<p><cite>self</cite> is explicitly positional-only to allow <cite>self</cite> as a field name.</p>
+<dl class="py attribute">
+<dt class="sig sig-object py" id="finance_opt.ConstraintSpec.model_config">
+<span class="sig-name descname"><span class="pre">model_config</span></span><a class="headerlink" href="#finance_opt.ConstraintSpec.model_config" title="Link to this definition">¶</a></dt>
+<dd><p>Configuration for the model, should be a dictionary conforming to [<cite>ConfigDict</cite>][pydantic.config.ConfigDict].</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="finance_opt.ConstraintSpec.long_only">
+<span class="sig-name descname"><span class="pre">long_only</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">bool</span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">True</span></em><a class="headerlink" href="#finance_opt.ConstraintSpec.long_only" title="Link to this definition">¶</a></dt>
 <dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="finance_opt.ConstraintSpec.budget">
+<span class="sig-name descname"><span class="pre">budget</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">float</span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">1.0</span></em><a class="headerlink" href="#finance_opt.ConstraintSpec.budget" title="Link to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="finance_opt.ConstraintSpec.min_weight">
+<span class="sig-name descname"><span class="pre">min_weight</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">float</span><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><span class="pre">None</span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">0.0</span></em><a class="headerlink" href="#finance_opt.ConstraintSpec.min_weight" title="Link to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="finance_opt.ConstraintSpec.max_weight">
+<span class="sig-name descname"><span class="pre">max_weight</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">float</span><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><span class="pre">None</span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">1.0</span></em><a class="headerlink" href="#finance_opt.ConstraintSpec.max_weight" title="Link to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="finance_opt.ConstraintSpec.leverage_limit">
+<span class="sig-name descname"><span class="pre">leverage_limit</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">float</span><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><span class="pre">None</span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">None</span></em><a class="headerlink" href="#finance_opt.ConstraintSpec.leverage_limit" title="Link to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="finance_opt.ConstraintSpec.max_turnover">
+<span class="sig-name descname"><span class="pre">max_turnover</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">float</span><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><span class="pre">None</span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">None</span></em><a class="headerlink" href="#finance_opt.ConstraintSpec.max_turnover" title="Link to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="finance_opt.ConstraintSpec.factor_bounds">
+<span class="sig-name descname"><span class="pre">factor_bounds</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">dict</span><span class="p"><span class="pre">[</span></span><span class="pre">str</span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">tuple</span><span class="p"><span class="pre">[</span></span><span class="pre">float</span><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><span class="pre">None</span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">float</span><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><span class="pre">None</span><span class="p"><span class="pre">]</span></span><span class="p"><span class="pre">]</span></span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">None</span></em><a class="headerlink" href="#finance_opt.ConstraintSpec.factor_bounds" title="Link to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="finance_opt.ConstraintSpec.sector_bounds">
+<span class="sig-name descname"><span class="pre">sector_bounds</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">dict</span><span class="p"><span class="pre">[</span></span><span class="pre">str</span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">tuple</span><span class="p"><span class="pre">[</span></span><span class="pre">float</span><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><span class="pre">None</span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">float</span><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><span class="pre">None</span><span class="p"><span class="pre">]</span></span><span class="p"><span class="pre">]</span></span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">None</span></em><a class="headerlink" href="#finance_opt.ConstraintSpec.sector_bounds" title="Link to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="finance_opt.ConstraintSpec._validate_bounds">
+<em class="property"><span class="k"><span class="pre">classmethod</span></span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">_validate_bounds</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">value</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">float</span><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">info</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="../../_modules/finance_opt/schemas.html#ConstraintSpec._validate_bounds"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#finance_opt.ConstraintSpec._validate_bounds" title="Link to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="finance_opt.ObjectiveSpec">
+<em class="property"><span class="k"><span class="pre">class</span></span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">finance_opt.</span></span><span class="sig-name descname"><span class="pre">ObjectiveSpec</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">/</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">**data:</span> <span class="pre">Any</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="../../_modules/finance_opt/schemas.html#ObjectiveSpec"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#finance_opt.ObjectiveSpec" title="Link to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-obj docutils literal notranslate"><span class="pre">pydantic.BaseModel</span></code></p>
+<dl class="simple">
+<dt>!!! abstract “Usage Documentation”</dt><dd><p>[Models](../concepts/models.md)</p>
+</dd>
+</dl>
+<p>A base class for creating Pydantic models.</p>
+<dl class="py attribute">
+<dt class="sig sig-object py" id="finance_opt.ObjectiveSpec.__class_vars__">
+<span class="sig-name descname"><span class="pre">__class_vars__</span></span><a class="headerlink" href="#finance_opt.ObjectiveSpec.__class_vars__" title="Link to this definition">¶</a></dt>
+<dd><p>The names of the class variables defined on the model.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="finance_opt.ObjectiveSpec.__private_attributes__">
+<span class="sig-name descname"><span class="pre">__private_attributes__</span></span><a class="headerlink" href="#finance_opt.ObjectiveSpec.__private_attributes__" title="Link to this definition">¶</a></dt>
+<dd><p>Metadata about the private attributes of the model.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="finance_opt.ObjectiveSpec.__signature__">
+<span class="sig-name descname"><span class="pre">__signature__</span></span><a class="headerlink" href="#finance_opt.ObjectiveSpec.__signature__" title="Link to this definition">¶</a></dt>
+<dd><p>The synthesized <cite>__init__</cite> [<cite>Signature</cite>][inspect.Signature] of the model.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="finance_opt.ObjectiveSpec.__pydantic_complete__">
+<span class="sig-name descname"><span class="pre">__pydantic_complete__</span></span><a class="headerlink" href="#finance_opt.ObjectiveSpec.__pydantic_complete__" title="Link to this definition">¶</a></dt>
+<dd><p>Whether model building is completed, or if there are still undefined fields.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="finance_opt.ObjectiveSpec.__pydantic_core_schema__">
+<span class="sig-name descname"><span class="pre">__pydantic_core_schema__</span></span><a class="headerlink" href="#finance_opt.ObjectiveSpec.__pydantic_core_schema__" title="Link to this definition">¶</a></dt>
+<dd><p>The core schema of the model.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="finance_opt.ObjectiveSpec.__pydantic_custom_init__">
+<span class="sig-name descname"><span class="pre">__pydantic_custom_init__</span></span><a class="headerlink" href="#finance_opt.ObjectiveSpec.__pydantic_custom_init__" title="Link to this definition">¶</a></dt>
+<dd><p>Whether the model has a custom <cite>__init__</cite> function.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="finance_opt.ObjectiveSpec.__pydantic_decorators__">
+<span class="sig-name descname"><span class="pre">__pydantic_decorators__</span></span><a class="headerlink" href="#finance_opt.ObjectiveSpec.__pydantic_decorators__" title="Link to this definition">¶</a></dt>
+<dd><p>Metadata containing the decorators defined on the model.
+This replaces <cite>Model.__validators__</cite> and <cite>Model.__root_validators__</cite> from Pydantic V1.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="finance_opt.ObjectiveSpec.__pydantic_generic_metadata__">
+<span class="sig-name descname"><span class="pre">__pydantic_generic_metadata__</span></span><a class="headerlink" href="#finance_opt.ObjectiveSpec.__pydantic_generic_metadata__" title="Link to this definition">¶</a></dt>
+<dd><p>A dictionary containing metadata about generic Pydantic models.
+The <cite>origin</cite> and <cite>args</cite> items map to the [<cite>__origin__</cite>][genericalias.__origin__]
+and [<cite>__args__</cite>][genericalias.__args__] attributes of [generic aliases][types-genericalias],
+and the <cite>parameter</cite> item maps to the <cite>__parameter__</cite> attribute of generic classes.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="finance_opt.ObjectiveSpec.__pydantic_parent_namespace__">
+<span class="sig-name descname"><span class="pre">__pydantic_parent_namespace__</span></span><a class="headerlink" href="#finance_opt.ObjectiveSpec.__pydantic_parent_namespace__" title="Link to this definition">¶</a></dt>
+<dd><p>Parent namespace of the model, used for automatic rebuilding of models.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="finance_opt.ObjectiveSpec.__pydantic_post_init__">
+<span class="sig-name descname"><span class="pre">__pydantic_post_init__</span></span><a class="headerlink" href="#finance_opt.ObjectiveSpec.__pydantic_post_init__" title="Link to this definition">¶</a></dt>
+<dd><p>The name of the post-init method for the model, if defined.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="finance_opt.ObjectiveSpec.__pydantic_root_model__">
+<span class="sig-name descname"><span class="pre">__pydantic_root_model__</span></span><a class="headerlink" href="#finance_opt.ObjectiveSpec.__pydantic_root_model__" title="Link to this definition">¶</a></dt>
+<dd><p>Whether the model is a [<cite>RootModel</cite>][pydantic.root_model.RootModel].</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="finance_opt.ObjectiveSpec.__pydantic_serializer__">
+<span class="sig-name descname"><span class="pre">__pydantic_serializer__</span></span><a class="headerlink" href="#finance_opt.ObjectiveSpec.__pydantic_serializer__" title="Link to this definition">¶</a></dt>
+<dd><p>The <cite>pydantic-core</cite> <cite>SchemaSerializer</cite> used to dump instances of the model.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="finance_opt.ObjectiveSpec.__pydantic_validator__">
+<span class="sig-name descname"><span class="pre">__pydantic_validator__</span></span><a class="headerlink" href="#finance_opt.ObjectiveSpec.__pydantic_validator__" title="Link to this definition">¶</a></dt>
+<dd><p>The <cite>pydantic-core</cite> <cite>SchemaValidator</cite> used to validate instances of the model.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="finance_opt.ObjectiveSpec.__pydantic_fields__">
+<span class="sig-name descname"><span class="pre">__pydantic_fields__</span></span><a class="headerlink" href="#finance_opt.ObjectiveSpec.__pydantic_fields__" title="Link to this definition">¶</a></dt>
+<dd><p>A dictionary of field names and their corresponding [<cite>FieldInfo</cite>][pydantic.fields.FieldInfo] objects.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="finance_opt.ObjectiveSpec.__pydantic_computed_fields__">
+<span class="sig-name descname"><span class="pre">__pydantic_computed_fields__</span></span><a class="headerlink" href="#finance_opt.ObjectiveSpec.__pydantic_computed_fields__" title="Link to this definition">¶</a></dt>
+<dd><p>A dictionary of computed field names and their corresponding [<cite>ComputedFieldInfo</cite>][pydantic.fields.ComputedFieldInfo] objects.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="finance_opt.ObjectiveSpec.__pydantic_extra__">
+<span class="sig-name descname"><span class="pre">__pydantic_extra__</span></span><a class="headerlink" href="#finance_opt.ObjectiveSpec.__pydantic_extra__" title="Link to this definition">¶</a></dt>
+<dd><p>A dictionary containing extra values, if [<cite>extra</cite>][pydantic.config.ConfigDict.extra]
+is set to <cite>‘allow’</cite>.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="finance_opt.ObjectiveSpec.__pydantic_fields_set__">
+<span class="sig-name descname"><span class="pre">__pydantic_fields_set__</span></span><a class="headerlink" href="#finance_opt.ObjectiveSpec.__pydantic_fields_set__" title="Link to this definition">¶</a></dt>
+<dd><p>The names of fields explicitly set during instantiation.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="finance_opt.ObjectiveSpec.__pydantic_private__">
+<span class="sig-name descname"><span class="pre">__pydantic_private__</span></span><a class="headerlink" href="#finance_opt.ObjectiveSpec.__pydantic_private__" title="Link to this definition">¶</a></dt>
+<dd><p>Values of private attributes set on the model instance.</p>
+</dd></dl>
+
+<p>Create a new model by parsing and validating input data from keyword arguments.</p>
+<p>Raises [<cite>ValidationError</cite>][pydantic_core.ValidationError] if the input data cannot be
+validated to form a valid model.</p>
+<p><cite>self</cite> is explicitly positional-only to allow <cite>self</cite> as a field name.</p>
+<dl class="py attribute">
+<dt class="sig sig-object py" id="finance_opt.ObjectiveSpec.model_config">
+<span class="sig-name descname"><span class="pre">model_config</span></span><a class="headerlink" href="#finance_opt.ObjectiveSpec.model_config" title="Link to this definition">¶</a></dt>
+<dd><p>Configuration for the model, should be a dictionary conforming to [<cite>ConfigDict</cite>][pydantic.config.ConfigDict].</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="finance_opt.ObjectiveSpec.name">
+<span class="sig-name descname"><span class="pre">name</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">Literal</span><span class="p"><span class="pre">[</span></span><span class="s"><span class="pre">'min_variance'</span></span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="s"><span class="pre">'max_sharpe'</span></span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="s"><span class="pre">'mean_variance'</span></span><span class="p"><span class="pre">]</span></span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">'mean_variance'</span></em><a class="headerlink" href="#finance_opt.ObjectiveSpec.name" title="Link to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="finance_opt.ObjectiveSpec.risk_aversion">
+<span class="sig-name descname"><span class="pre">risk_aversion</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">float</span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">None</span></em><a class="headerlink" href="#finance_opt.ObjectiveSpec.risk_aversion" title="Link to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="finance_opt.OptimizationProblem">
+<em class="property"><span class="k"><span class="pre">class</span></span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">finance_opt.</span></span><span class="sig-name descname"><span class="pre">OptimizationProblem</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">/</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">**data:</span> <span class="pre">Any</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="../../_modules/finance_opt/schemas.html#OptimizationProblem"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#finance_opt.OptimizationProblem" title="Link to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-obj docutils literal notranslate"><span class="pre">pydantic.BaseModel</span></code></p>
+<dl class="simple">
+<dt>!!! abstract “Usage Documentation”</dt><dd><p>[Models](../concepts/models.md)</p>
+</dd>
+</dl>
+<p>A base class for creating Pydantic models.</p>
+<dl class="py attribute">
+<dt class="sig sig-object py" id="finance_opt.OptimizationProblem.__class_vars__">
+<span class="sig-name descname"><span class="pre">__class_vars__</span></span><a class="headerlink" href="#finance_opt.OptimizationProblem.__class_vars__" title="Link to this definition">¶</a></dt>
+<dd><p>The names of the class variables defined on the model.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="finance_opt.OptimizationProblem.__private_attributes__">
+<span class="sig-name descname"><span class="pre">__private_attributes__</span></span><a class="headerlink" href="#finance_opt.OptimizationProblem.__private_attributes__" title="Link to this definition">¶</a></dt>
+<dd><p>Metadata about the private attributes of the model.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="finance_opt.OptimizationProblem.__signature__">
+<span class="sig-name descname"><span class="pre">__signature__</span></span><a class="headerlink" href="#finance_opt.OptimizationProblem.__signature__" title="Link to this definition">¶</a></dt>
+<dd><p>The synthesized <cite>__init__</cite> [<cite>Signature</cite>][inspect.Signature] of the model.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="finance_opt.OptimizationProblem.__pydantic_complete__">
+<span class="sig-name descname"><span class="pre">__pydantic_complete__</span></span><a class="headerlink" href="#finance_opt.OptimizationProblem.__pydantic_complete__" title="Link to this definition">¶</a></dt>
+<dd><p>Whether model building is completed, or if there are still undefined fields.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="finance_opt.OptimizationProblem.__pydantic_core_schema__">
+<span class="sig-name descname"><span class="pre">__pydantic_core_schema__</span></span><a class="headerlink" href="#finance_opt.OptimizationProblem.__pydantic_core_schema__" title="Link to this definition">¶</a></dt>
+<dd><p>The core schema of the model.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="finance_opt.OptimizationProblem.__pydantic_custom_init__">
+<span class="sig-name descname"><span class="pre">__pydantic_custom_init__</span></span><a class="headerlink" href="#finance_opt.OptimizationProblem.__pydantic_custom_init__" title="Link to this definition">¶</a></dt>
+<dd><p>Whether the model has a custom <cite>__init__</cite> function.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="finance_opt.OptimizationProblem.__pydantic_decorators__">
+<span class="sig-name descname"><span class="pre">__pydantic_decorators__</span></span><a class="headerlink" href="#finance_opt.OptimizationProblem.__pydantic_decorators__" title="Link to this definition">¶</a></dt>
+<dd><p>Metadata containing the decorators defined on the model.
+This replaces <cite>Model.__validators__</cite> and <cite>Model.__root_validators__</cite> from Pydantic V1.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="finance_opt.OptimizationProblem.__pydantic_generic_metadata__">
+<span class="sig-name descname"><span class="pre">__pydantic_generic_metadata__</span></span><a class="headerlink" href="#finance_opt.OptimizationProblem.__pydantic_generic_metadata__" title="Link to this definition">¶</a></dt>
+<dd><p>A dictionary containing metadata about generic Pydantic models.
+The <cite>origin</cite> and <cite>args</cite> items map to the [<cite>__origin__</cite>][genericalias.__origin__]
+and [<cite>__args__</cite>][genericalias.__args__] attributes of [generic aliases][types-genericalias],
+and the <cite>parameter</cite> item maps to the <cite>__parameter__</cite> attribute of generic classes.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="finance_opt.OptimizationProblem.__pydantic_parent_namespace__">
+<span class="sig-name descname"><span class="pre">__pydantic_parent_namespace__</span></span><a class="headerlink" href="#finance_opt.OptimizationProblem.__pydantic_parent_namespace__" title="Link to this definition">¶</a></dt>
+<dd><p>Parent namespace of the model, used for automatic rebuilding of models.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="finance_opt.OptimizationProblem.__pydantic_post_init__">
+<span class="sig-name descname"><span class="pre">__pydantic_post_init__</span></span><a class="headerlink" href="#finance_opt.OptimizationProblem.__pydantic_post_init__" title="Link to this definition">¶</a></dt>
+<dd><p>The name of the post-init method for the model, if defined.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="finance_opt.OptimizationProblem.__pydantic_root_model__">
+<span class="sig-name descname"><span class="pre">__pydantic_root_model__</span></span><a class="headerlink" href="#finance_opt.OptimizationProblem.__pydantic_root_model__" title="Link to this definition">¶</a></dt>
+<dd><p>Whether the model is a [<cite>RootModel</cite>][pydantic.root_model.RootModel].</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="finance_opt.OptimizationProblem.__pydantic_serializer__">
+<span class="sig-name descname"><span class="pre">__pydantic_serializer__</span></span><a class="headerlink" href="#finance_opt.OptimizationProblem.__pydantic_serializer__" title="Link to this definition">¶</a></dt>
+<dd><p>The <cite>pydantic-core</cite> <cite>SchemaSerializer</cite> used to dump instances of the model.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="finance_opt.OptimizationProblem.__pydantic_validator__">
+<span class="sig-name descname"><span class="pre">__pydantic_validator__</span></span><a class="headerlink" href="#finance_opt.OptimizationProblem.__pydantic_validator__" title="Link to this definition">¶</a></dt>
+<dd><p>The <cite>pydantic-core</cite> <cite>SchemaValidator</cite> used to validate instances of the model.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="finance_opt.OptimizationProblem.__pydantic_fields__">
+<span class="sig-name descname"><span class="pre">__pydantic_fields__</span></span><a class="headerlink" href="#finance_opt.OptimizationProblem.__pydantic_fields__" title="Link to this definition">¶</a></dt>
+<dd><p>A dictionary of field names and their corresponding [<cite>FieldInfo</cite>][pydantic.fields.FieldInfo] objects.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="finance_opt.OptimizationProblem.__pydantic_computed_fields__">
+<span class="sig-name descname"><span class="pre">__pydantic_computed_fields__</span></span><a class="headerlink" href="#finance_opt.OptimizationProblem.__pydantic_computed_fields__" title="Link to this definition">¶</a></dt>
+<dd><p>A dictionary of computed field names and their corresponding [<cite>ComputedFieldInfo</cite>][pydantic.fields.ComputedFieldInfo] objects.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="finance_opt.OptimizationProblem.__pydantic_extra__">
+<span class="sig-name descname"><span class="pre">__pydantic_extra__</span></span><a class="headerlink" href="#finance_opt.OptimizationProblem.__pydantic_extra__" title="Link to this definition">¶</a></dt>
+<dd><p>A dictionary containing extra values, if [<cite>extra</cite>][pydantic.config.ConfigDict.extra]
+is set to <cite>‘allow’</cite>.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="finance_opt.OptimizationProblem.__pydantic_fields_set__">
+<span class="sig-name descname"><span class="pre">__pydantic_fields_set__</span></span><a class="headerlink" href="#finance_opt.OptimizationProblem.__pydantic_fields_set__" title="Link to this definition">¶</a></dt>
+<dd><p>The names of fields explicitly set during instantiation.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="finance_opt.OptimizationProblem.__pydantic_private__">
+<span class="sig-name descname"><span class="pre">__pydantic_private__</span></span><a class="headerlink" href="#finance_opt.OptimizationProblem.__pydantic_private__" title="Link to this definition">¶</a></dt>
+<dd><p>Values of private attributes set on the model instance.</p>
+</dd></dl>
+
+<p>Create a new model by parsing and validating input data from keyword arguments.</p>
+<p>Raises [<cite>ValidationError</cite>][pydantic_core.ValidationError] if the input data cannot be
+validated to form a valid model.</p>
+<p><cite>self</cite> is explicitly positional-only to allow <cite>self</cite> as a field name.</p>
+<dl class="py attribute">
+<dt class="sig sig-object py" id="finance_opt.OptimizationProblem.model_config">
+<span class="sig-name descname"><span class="pre">model_config</span></span><a class="headerlink" href="#finance_opt.OptimizationProblem.model_config" title="Link to this definition">¶</a></dt>
+<dd><p>Configuration for the model, should be a dictionary conforming to [<cite>ConfigDict</cite>][pydantic.config.ConfigDict].</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="finance_opt.OptimizationProblem.expected_returns">
+<span class="sig-name descname"><span class="pre">expected_returns</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">tuple</span><span class="p"><span class="pre">[</span></span><span class="pre">float</span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">Ellipsis</span><span class="p"><span class="pre">]</span></span></em><a class="headerlink" href="#finance_opt.OptimizationProblem.expected_returns" title="Link to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="finance_opt.OptimizationProblem.covariance">
+<span class="sig-name descname"><span class="pre">covariance</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">tuple</span><span class="p"><span class="pre">[</span></span><span class="pre">tuple</span><span class="p"><span class="pre">[</span></span><span class="pre">float</span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">Ellipsis</span><span class="p"><span class="pre">]</span></span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">Ellipsis</span><span class="p"><span class="pre">]</span></span></em><a class="headerlink" href="#finance_opt.OptimizationProblem.covariance" title="Link to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="finance_opt.OptimizationProblem.asset_names">
+<span class="sig-name descname"><span class="pre">asset_names</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">tuple</span><span class="p"><span class="pre">[</span></span><span class="pre">str</span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">Ellipsis</span><span class="p"><span class="pre">]</span></span><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><span class="pre">None</span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">None</span></em><a class="headerlink" href="#finance_opt.OptimizationProblem.asset_names" title="Link to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="finance_opt.OptimizationProblem.current_weights">
+<span class="sig-name descname"><span class="pre">current_weights</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">tuple</span><span class="p"><span class="pre">[</span></span><span class="pre">float</span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">Ellipsis</span><span class="p"><span class="pre">]</span></span><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><span class="pre">None</span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">None</span></em><a class="headerlink" href="#finance_opt.OptimizationProblem.current_weights" title="Link to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="finance_opt.OptimizationProblem.liquidity_limits">
+<span class="sig-name descname"><span class="pre">liquidity_limits</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">tuple</span><span class="p"><span class="pre">[</span></span><span class="pre">float</span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">Ellipsis</span><span class="p"><span class="pre">]</span></span><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><span class="pre">None</span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">None</span></em><a class="headerlink" href="#finance_opt.OptimizationProblem.liquidity_limits" title="Link to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="finance_opt.OptimizationProblem.lot_sizes">
+<span class="sig-name descname"><span class="pre">lot_sizes</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">tuple</span><span class="p"><span class="pre">[</span></span><span class="pre">float</span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">Ellipsis</span><span class="p"><span class="pre">]</span></span><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><span class="pre">None</span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">None</span></em><a class="headerlink" href="#finance_opt.OptimizationProblem.lot_sizes" title="Link to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="finance_opt.OptimizationProblem.factor_names">
+<span class="sig-name descname"><span class="pre">factor_names</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">tuple</span><span class="p"><span class="pre">[</span></span><span class="pre">str</span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">Ellipsis</span><span class="p"><span class="pre">]</span></span><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><span class="pre">None</span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">None</span></em><a class="headerlink" href="#finance_opt.OptimizationProblem.factor_names" title="Link to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="finance_opt.OptimizationProblem.factor_loadings">
+<span class="sig-name descname"><span class="pre">factor_loadings</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">tuple</span><span class="p"><span class="pre">[</span></span><span class="pre">tuple</span><span class="p"><span class="pre">[</span></span><span class="pre">float</span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">Ellipsis</span><span class="p"><span class="pre">]</span></span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">Ellipsis</span><span class="p"><span class="pre">]</span></span><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><span class="pre">None</span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">None</span></em><a class="headerlink" href="#finance_opt.OptimizationProblem.factor_loadings" title="Link to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="finance_opt.OptimizationProblem.sector_labels">
+<span class="sig-name descname"><span class="pre">sector_labels</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">tuple</span><span class="p"><span class="pre">[</span></span><span class="pre">str</span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">Ellipsis</span><span class="p"><span class="pre">]</span></span><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><span class="pre">None</span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">None</span></em><a class="headerlink" href="#finance_opt.OptimizationProblem.sector_labels" title="Link to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="finance_opt.OptimizationProblem.objective">
+<span class="sig-name descname"><span class="pre">objective</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="reference internal" href="#finance_opt.ObjectiveSpec" title="finance_opt.ObjectiveSpec"><span class="pre">ObjectiveSpec</span></a></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">None</span></em><a class="headerlink" href="#finance_opt.OptimizationProblem.objective" title="Link to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="finance_opt.OptimizationProblem.costs">
+<span class="sig-name descname"><span class="pre">costs</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="reference internal" href="#finance_opt.TradingCostSpec" title="finance_opt.TradingCostSpec"><span class="pre">TradingCostSpec</span></a></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">None</span></em><a class="headerlink" href="#finance_opt.OptimizationProblem.costs" title="Link to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="finance_opt.OptimizationProblem.constraints">
+<span class="sig-name descname"><span class="pre">constraints</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="reference internal" href="#finance_opt.ConstraintSpec" title="finance_opt.ConstraintSpec"><span class="pre">ConstraintSpec</span></a></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">None</span></em><a class="headerlink" href="#finance_opt.OptimizationProblem.constraints" title="Link to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="finance_opt.OptimizationProblem.config">
+<span class="sig-name descname"><span class="pre">config</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="reference internal" href="#finance_opt.OptimizerConfig" title="finance_opt.OptimizerConfig"><span class="pre">OptimizerConfig</span></a></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">None</span></em><a class="headerlink" href="#finance_opt.OptimizationProblem.config" title="Link to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="finance_opt.OptimizationResult">
+<em class="property"><span class="k"><span class="pre">class</span></span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">finance_opt.</span></span><span class="sig-name descname"><span class="pre">OptimizationResult</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">/</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">**data:</span> <span class="pre">Any</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="../../_modules/finance_opt/schemas.html#OptimizationResult"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#finance_opt.OptimizationResult" title="Link to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-obj docutils literal notranslate"><span class="pre">pydantic.BaseModel</span></code></p>
+<dl class="simple">
+<dt>!!! abstract “Usage Documentation”</dt><dd><p>[Models](../concepts/models.md)</p>
+</dd>
+</dl>
+<p>A base class for creating Pydantic models.</p>
+<dl class="py attribute">
+<dt class="sig sig-object py" id="finance_opt.OptimizationResult.__class_vars__">
+<span class="sig-name descname"><span class="pre">__class_vars__</span></span><a class="headerlink" href="#finance_opt.OptimizationResult.__class_vars__" title="Link to this definition">¶</a></dt>
+<dd><p>The names of the class variables defined on the model.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="finance_opt.OptimizationResult.__private_attributes__">
+<span class="sig-name descname"><span class="pre">__private_attributes__</span></span><a class="headerlink" href="#finance_opt.OptimizationResult.__private_attributes__" title="Link to this definition">¶</a></dt>
+<dd><p>Metadata about the private attributes of the model.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="finance_opt.OptimizationResult.__signature__">
+<span class="sig-name descname"><span class="pre">__signature__</span></span><a class="headerlink" href="#finance_opt.OptimizationResult.__signature__" title="Link to this definition">¶</a></dt>
+<dd><p>The synthesized <cite>__init__</cite> [<cite>Signature</cite>][inspect.Signature] of the model.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="finance_opt.OptimizationResult.__pydantic_complete__">
+<span class="sig-name descname"><span class="pre">__pydantic_complete__</span></span><a class="headerlink" href="#finance_opt.OptimizationResult.__pydantic_complete__" title="Link to this definition">¶</a></dt>
+<dd><p>Whether model building is completed, or if there are still undefined fields.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="finance_opt.OptimizationResult.__pydantic_core_schema__">
+<span class="sig-name descname"><span class="pre">__pydantic_core_schema__</span></span><a class="headerlink" href="#finance_opt.OptimizationResult.__pydantic_core_schema__" title="Link to this definition">¶</a></dt>
+<dd><p>The core schema of the model.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="finance_opt.OptimizationResult.__pydantic_custom_init__">
+<span class="sig-name descname"><span class="pre">__pydantic_custom_init__</span></span><a class="headerlink" href="#finance_opt.OptimizationResult.__pydantic_custom_init__" title="Link to this definition">¶</a></dt>
+<dd><p>Whether the model has a custom <cite>__init__</cite> function.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="finance_opt.OptimizationResult.__pydantic_decorators__">
+<span class="sig-name descname"><span class="pre">__pydantic_decorators__</span></span><a class="headerlink" href="#finance_opt.OptimizationResult.__pydantic_decorators__" title="Link to this definition">¶</a></dt>
+<dd><p>Metadata containing the decorators defined on the model.
+This replaces <cite>Model.__validators__</cite> and <cite>Model.__root_validators__</cite> from Pydantic V1.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="finance_opt.OptimizationResult.__pydantic_generic_metadata__">
+<span class="sig-name descname"><span class="pre">__pydantic_generic_metadata__</span></span><a class="headerlink" href="#finance_opt.OptimizationResult.__pydantic_generic_metadata__" title="Link to this definition">¶</a></dt>
+<dd><p>A dictionary containing metadata about generic Pydantic models.
+The <cite>origin</cite> and <cite>args</cite> items map to the [<cite>__origin__</cite>][genericalias.__origin__]
+and [<cite>__args__</cite>][genericalias.__args__] attributes of [generic aliases][types-genericalias],
+and the <cite>parameter</cite> item maps to the <cite>__parameter__</cite> attribute of generic classes.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="finance_opt.OptimizationResult.__pydantic_parent_namespace__">
+<span class="sig-name descname"><span class="pre">__pydantic_parent_namespace__</span></span><a class="headerlink" href="#finance_opt.OptimizationResult.__pydantic_parent_namespace__" title="Link to this definition">¶</a></dt>
+<dd><p>Parent namespace of the model, used for automatic rebuilding of models.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="finance_opt.OptimizationResult.__pydantic_post_init__">
+<span class="sig-name descname"><span class="pre">__pydantic_post_init__</span></span><a class="headerlink" href="#finance_opt.OptimizationResult.__pydantic_post_init__" title="Link to this definition">¶</a></dt>
+<dd><p>The name of the post-init method for the model, if defined.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="finance_opt.OptimizationResult.__pydantic_root_model__">
+<span class="sig-name descname"><span class="pre">__pydantic_root_model__</span></span><a class="headerlink" href="#finance_opt.OptimizationResult.__pydantic_root_model__" title="Link to this definition">¶</a></dt>
+<dd><p>Whether the model is a [<cite>RootModel</cite>][pydantic.root_model.RootModel].</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="finance_opt.OptimizationResult.__pydantic_serializer__">
+<span class="sig-name descname"><span class="pre">__pydantic_serializer__</span></span><a class="headerlink" href="#finance_opt.OptimizationResult.__pydantic_serializer__" title="Link to this definition">¶</a></dt>
+<dd><p>The <cite>pydantic-core</cite> <cite>SchemaSerializer</cite> used to dump instances of the model.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="finance_opt.OptimizationResult.__pydantic_validator__">
+<span class="sig-name descname"><span class="pre">__pydantic_validator__</span></span><a class="headerlink" href="#finance_opt.OptimizationResult.__pydantic_validator__" title="Link to this definition">¶</a></dt>
+<dd><p>The <cite>pydantic-core</cite> <cite>SchemaValidator</cite> used to validate instances of the model.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="finance_opt.OptimizationResult.__pydantic_fields__">
+<span class="sig-name descname"><span class="pre">__pydantic_fields__</span></span><a class="headerlink" href="#finance_opt.OptimizationResult.__pydantic_fields__" title="Link to this definition">¶</a></dt>
+<dd><p>A dictionary of field names and their corresponding [<cite>FieldInfo</cite>][pydantic.fields.FieldInfo] objects.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="finance_opt.OptimizationResult.__pydantic_computed_fields__">
+<span class="sig-name descname"><span class="pre">__pydantic_computed_fields__</span></span><a class="headerlink" href="#finance_opt.OptimizationResult.__pydantic_computed_fields__" title="Link to this definition">¶</a></dt>
+<dd><p>A dictionary of computed field names and their corresponding [<cite>ComputedFieldInfo</cite>][pydantic.fields.ComputedFieldInfo] objects.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="finance_opt.OptimizationResult.__pydantic_extra__">
+<span class="sig-name descname"><span class="pre">__pydantic_extra__</span></span><a class="headerlink" href="#finance_opt.OptimizationResult.__pydantic_extra__" title="Link to this definition">¶</a></dt>
+<dd><p>A dictionary containing extra values, if [<cite>extra</cite>][pydantic.config.ConfigDict.extra]
+is set to <cite>‘allow’</cite>.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="finance_opt.OptimizationResult.__pydantic_fields_set__">
+<span class="sig-name descname"><span class="pre">__pydantic_fields_set__</span></span><a class="headerlink" href="#finance_opt.OptimizationResult.__pydantic_fields_set__" title="Link to this definition">¶</a></dt>
+<dd><p>The names of fields explicitly set during instantiation.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="finance_opt.OptimizationResult.__pydantic_private__">
+<span class="sig-name descname"><span class="pre">__pydantic_private__</span></span><a class="headerlink" href="#finance_opt.OptimizationResult.__pydantic_private__" title="Link to this definition">¶</a></dt>
+<dd><p>Values of private attributes set on the model instance.</p>
+</dd></dl>
+
+<p>Create a new model by parsing and validating input data from keyword arguments.</p>
+<p>Raises [<cite>ValidationError</cite>][pydantic_core.ValidationError] if the input data cannot be
+validated to form a valid model.</p>
+<p><cite>self</cite> is explicitly positional-only to allow <cite>self</cite> as a field name.</p>
+<dl class="py attribute">
+<dt class="sig sig-object py" id="finance_opt.OptimizationResult.model_config">
+<span class="sig-name descname"><span class="pre">model_config</span></span><a class="headerlink" href="#finance_opt.OptimizationResult.model_config" title="Link to this definition">¶</a></dt>
+<dd><p>Configuration for the model, should be a dictionary conforming to [<cite>ConfigDict</cite>][pydantic.config.ConfigDict].</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="finance_opt.OptimizationResult.weights">
+<span class="sig-name descname"><span class="pre">weights</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">tuple</span><span class="p"><span class="pre">[</span></span><span class="pre">float</span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">Ellipsis</span><span class="p"><span class="pre">]</span></span></em><a class="headerlink" href="#finance_opt.OptimizationResult.weights" title="Link to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="finance_opt.OptimizationResult.objective_value">
+<span class="sig-name descname"><span class="pre">objective_value</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">float</span></em><a class="headerlink" href="#finance_opt.OptimizationResult.objective_value" title="Link to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="finance_opt.OptimizationResult.converged">
+<span class="sig-name descname"><span class="pre">converged</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">bool</span></em><a class="headerlink" href="#finance_opt.OptimizationResult.converged" title="Link to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="finance_opt.OptimizationResult.iterations">
+<span class="sig-name descname"><span class="pre">iterations</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">int</span></em><a class="headerlink" href="#finance_opt.OptimizationResult.iterations" title="Link to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="finance_opt.OptimizationResult.diagnostics">
+<span class="sig-name descname"><span class="pre">diagnostics</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">dict</span><span class="p"><span class="pre">[</span></span><span class="pre">str</span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">float</span><span class="p"><span class="pre">]</span></span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">None</span></em><a class="headerlink" href="#finance_opt.OptimizationResult.diagnostics" title="Link to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="finance_opt.OptimizerConfig">
+<em class="property"><span class="k"><span class="pre">class</span></span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">finance_opt.</span></span><span class="sig-name descname"><span class="pre">OptimizerConfig</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">/</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">**data:</span> <span class="pre">Any</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="../../_modules/finance_opt/schemas.html#OptimizerConfig"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#finance_opt.OptimizerConfig" title="Link to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-obj docutils literal notranslate"><span class="pre">pydantic.BaseModel</span></code></p>
+<dl class="simple">
+<dt>!!! abstract “Usage Documentation”</dt><dd><p>[Models](../concepts/models.md)</p>
+</dd>
+</dl>
+<p>A base class for creating Pydantic models.</p>
+<dl class="py attribute">
+<dt class="sig sig-object py" id="finance_opt.OptimizerConfig.__class_vars__">
+<span class="sig-name descname"><span class="pre">__class_vars__</span></span><a class="headerlink" href="#finance_opt.OptimizerConfig.__class_vars__" title="Link to this definition">¶</a></dt>
+<dd><p>The names of the class variables defined on the model.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="finance_opt.OptimizerConfig.__private_attributes__">
+<span class="sig-name descname"><span class="pre">__private_attributes__</span></span><a class="headerlink" href="#finance_opt.OptimizerConfig.__private_attributes__" title="Link to this definition">¶</a></dt>
+<dd><p>Metadata about the private attributes of the model.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="finance_opt.OptimizerConfig.__signature__">
+<span class="sig-name descname"><span class="pre">__signature__</span></span><a class="headerlink" href="#finance_opt.OptimizerConfig.__signature__" title="Link to this definition">¶</a></dt>
+<dd><p>The synthesized <cite>__init__</cite> [<cite>Signature</cite>][inspect.Signature] of the model.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="finance_opt.OptimizerConfig.__pydantic_complete__">
+<span class="sig-name descname"><span class="pre">__pydantic_complete__</span></span><a class="headerlink" href="#finance_opt.OptimizerConfig.__pydantic_complete__" title="Link to this definition">¶</a></dt>
+<dd><p>Whether model building is completed, or if there are still undefined fields.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="finance_opt.OptimizerConfig.__pydantic_core_schema__">
+<span class="sig-name descname"><span class="pre">__pydantic_core_schema__</span></span><a class="headerlink" href="#finance_opt.OptimizerConfig.__pydantic_core_schema__" title="Link to this definition">¶</a></dt>
+<dd><p>The core schema of the model.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="finance_opt.OptimizerConfig.__pydantic_custom_init__">
+<span class="sig-name descname"><span class="pre">__pydantic_custom_init__</span></span><a class="headerlink" href="#finance_opt.OptimizerConfig.__pydantic_custom_init__" title="Link to this definition">¶</a></dt>
+<dd><p>Whether the model has a custom <cite>__init__</cite> function.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="finance_opt.OptimizerConfig.__pydantic_decorators__">
+<span class="sig-name descname"><span class="pre">__pydantic_decorators__</span></span><a class="headerlink" href="#finance_opt.OptimizerConfig.__pydantic_decorators__" title="Link to this definition">¶</a></dt>
+<dd><p>Metadata containing the decorators defined on the model.
+This replaces <cite>Model.__validators__</cite> and <cite>Model.__root_validators__</cite> from Pydantic V1.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="finance_opt.OptimizerConfig.__pydantic_generic_metadata__">
+<span class="sig-name descname"><span class="pre">__pydantic_generic_metadata__</span></span><a class="headerlink" href="#finance_opt.OptimizerConfig.__pydantic_generic_metadata__" title="Link to this definition">¶</a></dt>
+<dd><p>A dictionary containing metadata about generic Pydantic models.
+The <cite>origin</cite> and <cite>args</cite> items map to the [<cite>__origin__</cite>][genericalias.__origin__]
+and [<cite>__args__</cite>][genericalias.__args__] attributes of [generic aliases][types-genericalias],
+and the <cite>parameter</cite> item maps to the <cite>__parameter__</cite> attribute of generic classes.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="finance_opt.OptimizerConfig.__pydantic_parent_namespace__">
+<span class="sig-name descname"><span class="pre">__pydantic_parent_namespace__</span></span><a class="headerlink" href="#finance_opt.OptimizerConfig.__pydantic_parent_namespace__" title="Link to this definition">¶</a></dt>
+<dd><p>Parent namespace of the model, used for automatic rebuilding of models.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="finance_opt.OptimizerConfig.__pydantic_post_init__">
+<span class="sig-name descname"><span class="pre">__pydantic_post_init__</span></span><a class="headerlink" href="#finance_opt.OptimizerConfig.__pydantic_post_init__" title="Link to this definition">¶</a></dt>
+<dd><p>The name of the post-init method for the model, if defined.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="finance_opt.OptimizerConfig.__pydantic_root_model__">
+<span class="sig-name descname"><span class="pre">__pydantic_root_model__</span></span><a class="headerlink" href="#finance_opt.OptimizerConfig.__pydantic_root_model__" title="Link to this definition">¶</a></dt>
+<dd><p>Whether the model is a [<cite>RootModel</cite>][pydantic.root_model.RootModel].</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="finance_opt.OptimizerConfig.__pydantic_serializer__">
+<span class="sig-name descname"><span class="pre">__pydantic_serializer__</span></span><a class="headerlink" href="#finance_opt.OptimizerConfig.__pydantic_serializer__" title="Link to this definition">¶</a></dt>
+<dd><p>The <cite>pydantic-core</cite> <cite>SchemaSerializer</cite> used to dump instances of the model.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="finance_opt.OptimizerConfig.__pydantic_validator__">
+<span class="sig-name descname"><span class="pre">__pydantic_validator__</span></span><a class="headerlink" href="#finance_opt.OptimizerConfig.__pydantic_validator__" title="Link to this definition">¶</a></dt>
+<dd><p>The <cite>pydantic-core</cite> <cite>SchemaValidator</cite> used to validate instances of the model.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="finance_opt.OptimizerConfig.__pydantic_fields__">
+<span class="sig-name descname"><span class="pre">__pydantic_fields__</span></span><a class="headerlink" href="#finance_opt.OptimizerConfig.__pydantic_fields__" title="Link to this definition">¶</a></dt>
+<dd><p>A dictionary of field names and their corresponding [<cite>FieldInfo</cite>][pydantic.fields.FieldInfo] objects.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="finance_opt.OptimizerConfig.__pydantic_computed_fields__">
+<span class="sig-name descname"><span class="pre">__pydantic_computed_fields__</span></span><a class="headerlink" href="#finance_opt.OptimizerConfig.__pydantic_computed_fields__" title="Link to this definition">¶</a></dt>
+<dd><p>A dictionary of computed field names and their corresponding [<cite>ComputedFieldInfo</cite>][pydantic.fields.ComputedFieldInfo] objects.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="finance_opt.OptimizerConfig.__pydantic_extra__">
+<span class="sig-name descname"><span class="pre">__pydantic_extra__</span></span><a class="headerlink" href="#finance_opt.OptimizerConfig.__pydantic_extra__" title="Link to this definition">¶</a></dt>
+<dd><p>A dictionary containing extra values, if [<cite>extra</cite>][pydantic.config.ConfigDict.extra]
+is set to <cite>‘allow’</cite>.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="finance_opt.OptimizerConfig.__pydantic_fields_set__">
+<span class="sig-name descname"><span class="pre">__pydantic_fields_set__</span></span><a class="headerlink" href="#finance_opt.OptimizerConfig.__pydantic_fields_set__" title="Link to this definition">¶</a></dt>
+<dd><p>The names of fields explicitly set during instantiation.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="finance_opt.OptimizerConfig.__pydantic_private__">
+<span class="sig-name descname"><span class="pre">__pydantic_private__</span></span><a class="headerlink" href="#finance_opt.OptimizerConfig.__pydantic_private__" title="Link to this definition">¶</a></dt>
+<dd><p>Values of private attributes set on the model instance.</p>
+</dd></dl>
+
+<p>Create a new model by parsing and validating input data from keyword arguments.</p>
+<p>Raises [<cite>ValidationError</cite>][pydantic_core.ValidationError] if the input data cannot be
+validated to form a valid model.</p>
+<p><cite>self</cite> is explicitly positional-only to allow <cite>self</cite> as a field name.</p>
+<dl class="py attribute">
+<dt class="sig sig-object py" id="finance_opt.OptimizerConfig.model_config">
+<span class="sig-name descname"><span class="pre">model_config</span></span><a class="headerlink" href="#finance_opt.OptimizerConfig.model_config" title="Link to this definition">¶</a></dt>
+<dd><p>Configuration for the model, should be a dictionary conforming to [<cite>ConfigDict</cite>][pydantic.config.ConfigDict].</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="finance_opt.OptimizerConfig.solver">
+<span class="sig-name descname"><span class="pre">solver</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">Literal</span><span class="p"><span class="pre">[</span></span><span class="s"><span class="pre">'auto'</span></span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="s"><span class="pre">'native'</span></span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="s"><span class="pre">'projected_gradient'</span></span><span class="p"><span class="pre">]</span></span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">'auto'</span></em><a class="headerlink" href="#finance_opt.OptimizerConfig.solver" title="Link to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="finance_opt.OptimizerConfig.adapter">
+<span class="sig-name descname"><span class="pre">adapter</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">Literal</span><span class="p"><span class="pre">[</span></span><span class="s"><span class="pre">'auto'</span></span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="s"><span class="pre">'clarabel_like'</span></span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="s"><span class="pre">'numpy_qp'</span></span><span class="p"><span class="pre">]</span></span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">'auto'</span></em><a class="headerlink" href="#finance_opt.OptimizerConfig.adapter" title="Link to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="finance_opt.OptimizerConfig.max_iterations">
+<span class="sig-name descname"><span class="pre">max_iterations</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">int</span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">None</span></em><a class="headerlink" href="#finance_opt.OptimizerConfig.max_iterations" title="Link to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="finance_opt.OptimizerConfig.tolerance">
+<span class="sig-name descname"><span class="pre">tolerance</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">float</span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">None</span></em><a class="headerlink" href="#finance_opt.OptimizerConfig.tolerance" title="Link to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="finance_opt.OptimizerConfig.constraint_penalty">
+<span class="sig-name descname"><span class="pre">constraint_penalty</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">float</span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">None</span></em><a class="headerlink" href="#finance_opt.OptimizerConfig.constraint_penalty" title="Link to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="finance_opt.TradingCostSpec">
+<em class="property"><span class="k"><span class="pre">class</span></span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">finance_opt.</span></span><span class="sig-name descname"><span class="pre">TradingCostSpec</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">/</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">**data:</span> <span class="pre">Any</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="../../_modules/finance_opt/schemas.html#TradingCostSpec"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#finance_opt.TradingCostSpec" title="Link to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-obj docutils literal notranslate"><span class="pre">pydantic.BaseModel</span></code></p>
+<dl class="simple">
+<dt>!!! abstract “Usage Documentation”</dt><dd><p>[Models](../concepts/models.md)</p>
+</dd>
+</dl>
+<p>A base class for creating Pydantic models.</p>
+<dl class="py attribute">
+<dt class="sig sig-object py" id="finance_opt.TradingCostSpec.__class_vars__">
+<span class="sig-name descname"><span class="pre">__class_vars__</span></span><a class="headerlink" href="#finance_opt.TradingCostSpec.__class_vars__" title="Link to this definition">¶</a></dt>
+<dd><p>The names of the class variables defined on the model.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="finance_opt.TradingCostSpec.__private_attributes__">
+<span class="sig-name descname"><span class="pre">__private_attributes__</span></span><a class="headerlink" href="#finance_opt.TradingCostSpec.__private_attributes__" title="Link to this definition">¶</a></dt>
+<dd><p>Metadata about the private attributes of the model.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="finance_opt.TradingCostSpec.__signature__">
+<span class="sig-name descname"><span class="pre">__signature__</span></span><a class="headerlink" href="#finance_opt.TradingCostSpec.__signature__" title="Link to this definition">¶</a></dt>
+<dd><p>The synthesized <cite>__init__</cite> [<cite>Signature</cite>][inspect.Signature] of the model.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="finance_opt.TradingCostSpec.__pydantic_complete__">
+<span class="sig-name descname"><span class="pre">__pydantic_complete__</span></span><a class="headerlink" href="#finance_opt.TradingCostSpec.__pydantic_complete__" title="Link to this definition">¶</a></dt>
+<dd><p>Whether model building is completed, or if there are still undefined fields.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="finance_opt.TradingCostSpec.__pydantic_core_schema__">
+<span class="sig-name descname"><span class="pre">__pydantic_core_schema__</span></span><a class="headerlink" href="#finance_opt.TradingCostSpec.__pydantic_core_schema__" title="Link to this definition">¶</a></dt>
+<dd><p>The core schema of the model.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="finance_opt.TradingCostSpec.__pydantic_custom_init__">
+<span class="sig-name descname"><span class="pre">__pydantic_custom_init__</span></span><a class="headerlink" href="#finance_opt.TradingCostSpec.__pydantic_custom_init__" title="Link to this definition">¶</a></dt>
+<dd><p>Whether the model has a custom <cite>__init__</cite> function.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="finance_opt.TradingCostSpec.__pydantic_decorators__">
+<span class="sig-name descname"><span class="pre">__pydantic_decorators__</span></span><a class="headerlink" href="#finance_opt.TradingCostSpec.__pydantic_decorators__" title="Link to this definition">¶</a></dt>
+<dd><p>Metadata containing the decorators defined on the model.
+This replaces <cite>Model.__validators__</cite> and <cite>Model.__root_validators__</cite> from Pydantic V1.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="finance_opt.TradingCostSpec.__pydantic_generic_metadata__">
+<span class="sig-name descname"><span class="pre">__pydantic_generic_metadata__</span></span><a class="headerlink" href="#finance_opt.TradingCostSpec.__pydantic_generic_metadata__" title="Link to this definition">¶</a></dt>
+<dd><p>A dictionary containing metadata about generic Pydantic models.
+The <cite>origin</cite> and <cite>args</cite> items map to the [<cite>__origin__</cite>][genericalias.__origin__]
+and [<cite>__args__</cite>][genericalias.__args__] attributes of [generic aliases][types-genericalias],
+and the <cite>parameter</cite> item maps to the <cite>__parameter__</cite> attribute of generic classes.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="finance_opt.TradingCostSpec.__pydantic_parent_namespace__">
+<span class="sig-name descname"><span class="pre">__pydantic_parent_namespace__</span></span><a class="headerlink" href="#finance_opt.TradingCostSpec.__pydantic_parent_namespace__" title="Link to this definition">¶</a></dt>
+<dd><p>Parent namespace of the model, used for automatic rebuilding of models.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="finance_opt.TradingCostSpec.__pydantic_post_init__">
+<span class="sig-name descname"><span class="pre">__pydantic_post_init__</span></span><a class="headerlink" href="#finance_opt.TradingCostSpec.__pydantic_post_init__" title="Link to this definition">¶</a></dt>
+<dd><p>The name of the post-init method for the model, if defined.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="finance_opt.TradingCostSpec.__pydantic_root_model__">
+<span class="sig-name descname"><span class="pre">__pydantic_root_model__</span></span><a class="headerlink" href="#finance_opt.TradingCostSpec.__pydantic_root_model__" title="Link to this definition">¶</a></dt>
+<dd><p>Whether the model is a [<cite>RootModel</cite>][pydantic.root_model.RootModel].</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="finance_opt.TradingCostSpec.__pydantic_serializer__">
+<span class="sig-name descname"><span class="pre">__pydantic_serializer__</span></span><a class="headerlink" href="#finance_opt.TradingCostSpec.__pydantic_serializer__" title="Link to this definition">¶</a></dt>
+<dd><p>The <cite>pydantic-core</cite> <cite>SchemaSerializer</cite> used to dump instances of the model.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="finance_opt.TradingCostSpec.__pydantic_validator__">
+<span class="sig-name descname"><span class="pre">__pydantic_validator__</span></span><a class="headerlink" href="#finance_opt.TradingCostSpec.__pydantic_validator__" title="Link to this definition">¶</a></dt>
+<dd><p>The <cite>pydantic-core</cite> <cite>SchemaValidator</cite> used to validate instances of the model.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="finance_opt.TradingCostSpec.__pydantic_fields__">
+<span class="sig-name descname"><span class="pre">__pydantic_fields__</span></span><a class="headerlink" href="#finance_opt.TradingCostSpec.__pydantic_fields__" title="Link to this definition">¶</a></dt>
+<dd><p>A dictionary of field names and their corresponding [<cite>FieldInfo</cite>][pydantic.fields.FieldInfo] objects.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="finance_opt.TradingCostSpec.__pydantic_computed_fields__">
+<span class="sig-name descname"><span class="pre">__pydantic_computed_fields__</span></span><a class="headerlink" href="#finance_opt.TradingCostSpec.__pydantic_computed_fields__" title="Link to this definition">¶</a></dt>
+<dd><p>A dictionary of computed field names and their corresponding [<cite>ComputedFieldInfo</cite>][pydantic.fields.ComputedFieldInfo] objects.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="finance_opt.TradingCostSpec.__pydantic_extra__">
+<span class="sig-name descname"><span class="pre">__pydantic_extra__</span></span><a class="headerlink" href="#finance_opt.TradingCostSpec.__pydantic_extra__" title="Link to this definition">¶</a></dt>
+<dd><p>A dictionary containing extra values, if [<cite>extra</cite>][pydantic.config.ConfigDict.extra]
+is set to <cite>‘allow’</cite>.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="finance_opt.TradingCostSpec.__pydantic_fields_set__">
+<span class="sig-name descname"><span class="pre">__pydantic_fields_set__</span></span><a class="headerlink" href="#finance_opt.TradingCostSpec.__pydantic_fields_set__" title="Link to this definition">¶</a></dt>
+<dd><p>The names of fields explicitly set during instantiation.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="finance_opt.TradingCostSpec.__pydantic_private__">
+<span class="sig-name descname"><span class="pre">__pydantic_private__</span></span><a class="headerlink" href="#finance_opt.TradingCostSpec.__pydantic_private__" title="Link to this definition">¶</a></dt>
+<dd><p>Values of private attributes set on the model instance.</p>
+</dd></dl>
+
+<p>Create a new model by parsing and validating input data from keyword arguments.</p>
+<p>Raises [<cite>ValidationError</cite>][pydantic_core.ValidationError] if the input data cannot be
+validated to form a valid model.</p>
+<p><cite>self</cite> is explicitly positional-only to allow <cite>self</cite> as a field name.</p>
+<dl class="py attribute">
+<dt class="sig sig-object py" id="finance_opt.TradingCostSpec.model_config">
+<span class="sig-name descname"><span class="pre">model_config</span></span><a class="headerlink" href="#finance_opt.TradingCostSpec.model_config" title="Link to this definition">¶</a></dt>
+<dd><p>Configuration for the model, should be a dictionary conforming to [<cite>ConfigDict</cite>][pydantic.config.ConfigDict].</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="finance_opt.TradingCostSpec.linear_fee_bps">
+<span class="sig-name descname"><span class="pre">linear_fee_bps</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">float</span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">None</span></em><a class="headerlink" href="#finance_opt.TradingCostSpec.linear_fee_bps" title="Link to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="finance_opt.TradingCostSpec.spread_bps">
+<span class="sig-name descname"><span class="pre">spread_bps</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">float</span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">None</span></em><a class="headerlink" href="#finance_opt.TradingCostSpec.spread_bps" title="Link to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="finance_opt.TradingCostSpec.turnover_penalty">
+<span class="sig-name descname"><span class="pre">turnover_penalty</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">float</span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">None</span></em><a class="headerlink" href="#finance_opt.TradingCostSpec.turnover_penalty" title="Link to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="finance_opt.TradingCostSpec.impact_coefficient">
+<span class="sig-name descname"><span class="pre">impact_coefficient</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">float</span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">None</span></em><a class="headerlink" href="#finance_opt.TradingCostSpec.impact_coefficient" title="Link to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
 
 </section>
 </section>
@@ -269,7 +1286,15 @@
       <footer>
         
         <div class="related-pages">
-          
+          <a class="next-page" href="optimization/index.html">
+              <div class="page-info">
+                <div class="context">
+                  <span>Next</span>
+                </div>
+                <div class="title">finance_opt.optimization</div>
+              </div>
+              <svg class="furo-related-icon"><use href="#svg-arrow-right"></use></svg>
+            </a>
           <a class="prev-page" href="../test_all/index.html">
               <svg class="furo-related-icon"><use href="#svg-arrow-right"></use></svg>
               <div class="page-info">
@@ -312,9 +1337,179 @@
           <div class="toc-tree">
             <ul>
 <li><a class="reference internal" href="#">finance_opt</a><ul>
-<li><a class="reference internal" href="#attributes">Attributes</a></li>
+<li><a class="reference internal" href="#submodules">Submodules</a></li>
+<li><a class="reference internal" href="#classes">Classes</a></li>
 <li><a class="reference internal" href="#package-contents">Package Contents</a><ul>
-<li><a class="reference internal" href="#finance_opt.__version__"><code class="docutils literal notranslate"><span class="pre">__version__</span></code></a></li>
+<li><a class="reference internal" href="#finance_opt.ConstraintSpec"><code class="docutils literal notranslate"><span class="pre">ConstraintSpec</span></code></a><ul>
+<li><a class="reference internal" href="#finance_opt.ConstraintSpec.__class_vars__"><code class="docutils literal notranslate"><span class="pre">ConstraintSpec.__class_vars__</span></code></a></li>
+<li><a class="reference internal" href="#finance_opt.ConstraintSpec.__private_attributes__"><code class="docutils literal notranslate"><span class="pre">ConstraintSpec.__private_attributes__</span></code></a></li>
+<li><a class="reference internal" href="#finance_opt.ConstraintSpec.__signature__"><code class="docutils literal notranslate"><span class="pre">ConstraintSpec.__signature__</span></code></a></li>
+<li><a class="reference internal" href="#finance_opt.ConstraintSpec.__pydantic_complete__"><code class="docutils literal notranslate"><span class="pre">ConstraintSpec.__pydantic_complete__</span></code></a></li>
+<li><a class="reference internal" href="#finance_opt.ConstraintSpec.__pydantic_core_schema__"><code class="docutils literal notranslate"><span class="pre">ConstraintSpec.__pydantic_core_schema__</span></code></a></li>
+<li><a class="reference internal" href="#finance_opt.ConstraintSpec.__pydantic_custom_init__"><code class="docutils literal notranslate"><span class="pre">ConstraintSpec.__pydantic_custom_init__</span></code></a></li>
+<li><a class="reference internal" href="#finance_opt.ConstraintSpec.__pydantic_decorators__"><code class="docutils literal notranslate"><span class="pre">ConstraintSpec.__pydantic_decorators__</span></code></a></li>
+<li><a class="reference internal" href="#finance_opt.ConstraintSpec.__pydantic_generic_metadata__"><code class="docutils literal notranslate"><span class="pre">ConstraintSpec.__pydantic_generic_metadata__</span></code></a></li>
+<li><a class="reference internal" href="#finance_opt.ConstraintSpec.__pydantic_parent_namespace__"><code class="docutils literal notranslate"><span class="pre">ConstraintSpec.__pydantic_parent_namespace__</span></code></a></li>
+<li><a class="reference internal" href="#finance_opt.ConstraintSpec.__pydantic_post_init__"><code class="docutils literal notranslate"><span class="pre">ConstraintSpec.__pydantic_post_init__</span></code></a></li>
+<li><a class="reference internal" href="#finance_opt.ConstraintSpec.__pydantic_root_model__"><code class="docutils literal notranslate"><span class="pre">ConstraintSpec.__pydantic_root_model__</span></code></a></li>
+<li><a class="reference internal" href="#finance_opt.ConstraintSpec.__pydantic_serializer__"><code class="docutils literal notranslate"><span class="pre">ConstraintSpec.__pydantic_serializer__</span></code></a></li>
+<li><a class="reference internal" href="#finance_opt.ConstraintSpec.__pydantic_validator__"><code class="docutils literal notranslate"><span class="pre">ConstraintSpec.__pydantic_validator__</span></code></a></li>
+<li><a class="reference internal" href="#finance_opt.ConstraintSpec.__pydantic_fields__"><code class="docutils literal notranslate"><span class="pre">ConstraintSpec.__pydantic_fields__</span></code></a></li>
+<li><a class="reference internal" href="#finance_opt.ConstraintSpec.__pydantic_computed_fields__"><code class="docutils literal notranslate"><span class="pre">ConstraintSpec.__pydantic_computed_fields__</span></code></a></li>
+<li><a class="reference internal" href="#finance_opt.ConstraintSpec.__pydantic_extra__"><code class="docutils literal notranslate"><span class="pre">ConstraintSpec.__pydantic_extra__</span></code></a></li>
+<li><a class="reference internal" href="#finance_opt.ConstraintSpec.__pydantic_fields_set__"><code class="docutils literal notranslate"><span class="pre">ConstraintSpec.__pydantic_fields_set__</span></code></a></li>
+<li><a class="reference internal" href="#finance_opt.ConstraintSpec.__pydantic_private__"><code class="docutils literal notranslate"><span class="pre">ConstraintSpec.__pydantic_private__</span></code></a></li>
+<li><a class="reference internal" href="#finance_opt.ConstraintSpec.model_config"><code class="docutils literal notranslate"><span class="pre">ConstraintSpec.model_config</span></code></a></li>
+<li><a class="reference internal" href="#finance_opt.ConstraintSpec.long_only"><code class="docutils literal notranslate"><span class="pre">ConstraintSpec.long_only</span></code></a></li>
+<li><a class="reference internal" href="#finance_opt.ConstraintSpec.budget"><code class="docutils literal notranslate"><span class="pre">ConstraintSpec.budget</span></code></a></li>
+<li><a class="reference internal" href="#finance_opt.ConstraintSpec.min_weight"><code class="docutils literal notranslate"><span class="pre">ConstraintSpec.min_weight</span></code></a></li>
+<li><a class="reference internal" href="#finance_opt.ConstraintSpec.max_weight"><code class="docutils literal notranslate"><span class="pre">ConstraintSpec.max_weight</span></code></a></li>
+<li><a class="reference internal" href="#finance_opt.ConstraintSpec.leverage_limit"><code class="docutils literal notranslate"><span class="pre">ConstraintSpec.leverage_limit</span></code></a></li>
+<li><a class="reference internal" href="#finance_opt.ConstraintSpec.max_turnover"><code class="docutils literal notranslate"><span class="pre">ConstraintSpec.max_turnover</span></code></a></li>
+<li><a class="reference internal" href="#finance_opt.ConstraintSpec.factor_bounds"><code class="docutils literal notranslate"><span class="pre">ConstraintSpec.factor_bounds</span></code></a></li>
+<li><a class="reference internal" href="#finance_opt.ConstraintSpec.sector_bounds"><code class="docutils literal notranslate"><span class="pre">ConstraintSpec.sector_bounds</span></code></a></li>
+<li><a class="reference internal" href="#finance_opt.ConstraintSpec._validate_bounds"><code class="docutils literal notranslate"><span class="pre">ConstraintSpec._validate_bounds()</span></code></a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#finance_opt.ObjectiveSpec"><code class="docutils literal notranslate"><span class="pre">ObjectiveSpec</span></code></a><ul>
+<li><a class="reference internal" href="#finance_opt.ObjectiveSpec.__class_vars__"><code class="docutils literal notranslate"><span class="pre">ObjectiveSpec.__class_vars__</span></code></a></li>
+<li><a class="reference internal" href="#finance_opt.ObjectiveSpec.__private_attributes__"><code class="docutils literal notranslate"><span class="pre">ObjectiveSpec.__private_attributes__</span></code></a></li>
+<li><a class="reference internal" href="#finance_opt.ObjectiveSpec.__signature__"><code class="docutils literal notranslate"><span class="pre">ObjectiveSpec.__signature__</span></code></a></li>
+<li><a class="reference internal" href="#finance_opt.ObjectiveSpec.__pydantic_complete__"><code class="docutils literal notranslate"><span class="pre">ObjectiveSpec.__pydantic_complete__</span></code></a></li>
+<li><a class="reference internal" href="#finance_opt.ObjectiveSpec.__pydantic_core_schema__"><code class="docutils literal notranslate"><span class="pre">ObjectiveSpec.__pydantic_core_schema__</span></code></a></li>
+<li><a class="reference internal" href="#finance_opt.ObjectiveSpec.__pydantic_custom_init__"><code class="docutils literal notranslate"><span class="pre">ObjectiveSpec.__pydantic_custom_init__</span></code></a></li>
+<li><a class="reference internal" href="#finance_opt.ObjectiveSpec.__pydantic_decorators__"><code class="docutils literal notranslate"><span class="pre">ObjectiveSpec.__pydantic_decorators__</span></code></a></li>
+<li><a class="reference internal" href="#finance_opt.ObjectiveSpec.__pydantic_generic_metadata__"><code class="docutils literal notranslate"><span class="pre">ObjectiveSpec.__pydantic_generic_metadata__</span></code></a></li>
+<li><a class="reference internal" href="#finance_opt.ObjectiveSpec.__pydantic_parent_namespace__"><code class="docutils literal notranslate"><span class="pre">ObjectiveSpec.__pydantic_parent_namespace__</span></code></a></li>
+<li><a class="reference internal" href="#finance_opt.ObjectiveSpec.__pydantic_post_init__"><code class="docutils literal notranslate"><span class="pre">ObjectiveSpec.__pydantic_post_init__</span></code></a></li>
+<li><a class="reference internal" href="#finance_opt.ObjectiveSpec.__pydantic_root_model__"><code class="docutils literal notranslate"><span class="pre">ObjectiveSpec.__pydantic_root_model__</span></code></a></li>
+<li><a class="reference internal" href="#finance_opt.ObjectiveSpec.__pydantic_serializer__"><code class="docutils literal notranslate"><span class="pre">ObjectiveSpec.__pydantic_serializer__</span></code></a></li>
+<li><a class="reference internal" href="#finance_opt.ObjectiveSpec.__pydantic_validator__"><code class="docutils literal notranslate"><span class="pre">ObjectiveSpec.__pydantic_validator__</span></code></a></li>
+<li><a class="reference internal" href="#finance_opt.ObjectiveSpec.__pydantic_fields__"><code class="docutils literal notranslate"><span class="pre">ObjectiveSpec.__pydantic_fields__</span></code></a></li>
+<li><a class="reference internal" href="#finance_opt.ObjectiveSpec.__pydantic_computed_fields__"><code class="docutils literal notranslate"><span class="pre">ObjectiveSpec.__pydantic_computed_fields__</span></code></a></li>
+<li><a class="reference internal" href="#finance_opt.ObjectiveSpec.__pydantic_extra__"><code class="docutils literal notranslate"><span class="pre">ObjectiveSpec.__pydantic_extra__</span></code></a></li>
+<li><a class="reference internal" href="#finance_opt.ObjectiveSpec.__pydantic_fields_set__"><code class="docutils literal notranslate"><span class="pre">ObjectiveSpec.__pydantic_fields_set__</span></code></a></li>
+<li><a class="reference internal" href="#finance_opt.ObjectiveSpec.__pydantic_private__"><code class="docutils literal notranslate"><span class="pre">ObjectiveSpec.__pydantic_private__</span></code></a></li>
+<li><a class="reference internal" href="#finance_opt.ObjectiveSpec.model_config"><code class="docutils literal notranslate"><span class="pre">ObjectiveSpec.model_config</span></code></a></li>
+<li><a class="reference internal" href="#finance_opt.ObjectiveSpec.name"><code class="docutils literal notranslate"><span class="pre">ObjectiveSpec.name</span></code></a></li>
+<li><a class="reference internal" href="#finance_opt.ObjectiveSpec.risk_aversion"><code class="docutils literal notranslate"><span class="pre">ObjectiveSpec.risk_aversion</span></code></a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#finance_opt.OptimizationProblem"><code class="docutils literal notranslate"><span class="pre">OptimizationProblem</span></code></a><ul>
+<li><a class="reference internal" href="#finance_opt.OptimizationProblem.__class_vars__"><code class="docutils literal notranslate"><span class="pre">OptimizationProblem.__class_vars__</span></code></a></li>
+<li><a class="reference internal" href="#finance_opt.OptimizationProblem.__private_attributes__"><code class="docutils literal notranslate"><span class="pre">OptimizationProblem.__private_attributes__</span></code></a></li>
+<li><a class="reference internal" href="#finance_opt.OptimizationProblem.__signature__"><code class="docutils literal notranslate"><span class="pre">OptimizationProblem.__signature__</span></code></a></li>
+<li><a class="reference internal" href="#finance_opt.OptimizationProblem.__pydantic_complete__"><code class="docutils literal notranslate"><span class="pre">OptimizationProblem.__pydantic_complete__</span></code></a></li>
+<li><a class="reference internal" href="#finance_opt.OptimizationProblem.__pydantic_core_schema__"><code class="docutils literal notranslate"><span class="pre">OptimizationProblem.__pydantic_core_schema__</span></code></a></li>
+<li><a class="reference internal" href="#finance_opt.OptimizationProblem.__pydantic_custom_init__"><code class="docutils literal notranslate"><span class="pre">OptimizationProblem.__pydantic_custom_init__</span></code></a></li>
+<li><a class="reference internal" href="#finance_opt.OptimizationProblem.__pydantic_decorators__"><code class="docutils literal notranslate"><span class="pre">OptimizationProblem.__pydantic_decorators__</span></code></a></li>
+<li><a class="reference internal" href="#finance_opt.OptimizationProblem.__pydantic_generic_metadata__"><code class="docutils literal notranslate"><span class="pre">OptimizationProblem.__pydantic_generic_metadata__</span></code></a></li>
+<li><a class="reference internal" href="#finance_opt.OptimizationProblem.__pydantic_parent_namespace__"><code class="docutils literal notranslate"><span class="pre">OptimizationProblem.__pydantic_parent_namespace__</span></code></a></li>
+<li><a class="reference internal" href="#finance_opt.OptimizationProblem.__pydantic_post_init__"><code class="docutils literal notranslate"><span class="pre">OptimizationProblem.__pydantic_post_init__</span></code></a></li>
+<li><a class="reference internal" href="#finance_opt.OptimizationProblem.__pydantic_root_model__"><code class="docutils literal notranslate"><span class="pre">OptimizationProblem.__pydantic_root_model__</span></code></a></li>
+<li><a class="reference internal" href="#finance_opt.OptimizationProblem.__pydantic_serializer__"><code class="docutils literal notranslate"><span class="pre">OptimizationProblem.__pydantic_serializer__</span></code></a></li>
+<li><a class="reference internal" href="#finance_opt.OptimizationProblem.__pydantic_validator__"><code class="docutils literal notranslate"><span class="pre">OptimizationProblem.__pydantic_validator__</span></code></a></li>
+<li><a class="reference internal" href="#finance_opt.OptimizationProblem.__pydantic_fields__"><code class="docutils literal notranslate"><span class="pre">OptimizationProblem.__pydantic_fields__</span></code></a></li>
+<li><a class="reference internal" href="#finance_opt.OptimizationProblem.__pydantic_computed_fields__"><code class="docutils literal notranslate"><span class="pre">OptimizationProblem.__pydantic_computed_fields__</span></code></a></li>
+<li><a class="reference internal" href="#finance_opt.OptimizationProblem.__pydantic_extra__"><code class="docutils literal notranslate"><span class="pre">OptimizationProblem.__pydantic_extra__</span></code></a></li>
+<li><a class="reference internal" href="#finance_opt.OptimizationProblem.__pydantic_fields_set__"><code class="docutils literal notranslate"><span class="pre">OptimizationProblem.__pydantic_fields_set__</span></code></a></li>
+<li><a class="reference internal" href="#finance_opt.OptimizationProblem.__pydantic_private__"><code class="docutils literal notranslate"><span class="pre">OptimizationProblem.__pydantic_private__</span></code></a></li>
+<li><a class="reference internal" href="#finance_opt.OptimizationProblem.model_config"><code class="docutils literal notranslate"><span class="pre">OptimizationProblem.model_config</span></code></a></li>
+<li><a class="reference internal" href="#finance_opt.OptimizationProblem.expected_returns"><code class="docutils literal notranslate"><span class="pre">OptimizationProblem.expected_returns</span></code></a></li>
+<li><a class="reference internal" href="#finance_opt.OptimizationProblem.covariance"><code class="docutils literal notranslate"><span class="pre">OptimizationProblem.covariance</span></code></a></li>
+<li><a class="reference internal" href="#finance_opt.OptimizationProblem.asset_names"><code class="docutils literal notranslate"><span class="pre">OptimizationProblem.asset_names</span></code></a></li>
+<li><a class="reference internal" href="#finance_opt.OptimizationProblem.current_weights"><code class="docutils literal notranslate"><span class="pre">OptimizationProblem.current_weights</span></code></a></li>
+<li><a class="reference internal" href="#finance_opt.OptimizationProblem.liquidity_limits"><code class="docutils literal notranslate"><span class="pre">OptimizationProblem.liquidity_limits</span></code></a></li>
+<li><a class="reference internal" href="#finance_opt.OptimizationProblem.lot_sizes"><code class="docutils literal notranslate"><span class="pre">OptimizationProblem.lot_sizes</span></code></a></li>
+<li><a class="reference internal" href="#finance_opt.OptimizationProblem.factor_names"><code class="docutils literal notranslate"><span class="pre">OptimizationProblem.factor_names</span></code></a></li>
+<li><a class="reference internal" href="#finance_opt.OptimizationProblem.factor_loadings"><code class="docutils literal notranslate"><span class="pre">OptimizationProblem.factor_loadings</span></code></a></li>
+<li><a class="reference internal" href="#finance_opt.OptimizationProblem.sector_labels"><code class="docutils literal notranslate"><span class="pre">OptimizationProblem.sector_labels</span></code></a></li>
+<li><a class="reference internal" href="#finance_opt.OptimizationProblem.objective"><code class="docutils literal notranslate"><span class="pre">OptimizationProblem.objective</span></code></a></li>
+<li><a class="reference internal" href="#finance_opt.OptimizationProblem.costs"><code class="docutils literal notranslate"><span class="pre">OptimizationProblem.costs</span></code></a></li>
+<li><a class="reference internal" href="#finance_opt.OptimizationProblem.constraints"><code class="docutils literal notranslate"><span class="pre">OptimizationProblem.constraints</span></code></a></li>
+<li><a class="reference internal" href="#finance_opt.OptimizationProblem.config"><code class="docutils literal notranslate"><span class="pre">OptimizationProblem.config</span></code></a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#finance_opt.OptimizationResult"><code class="docutils literal notranslate"><span class="pre">OptimizationResult</span></code></a><ul>
+<li><a class="reference internal" href="#finance_opt.OptimizationResult.__class_vars__"><code class="docutils literal notranslate"><span class="pre">OptimizationResult.__class_vars__</span></code></a></li>
+<li><a class="reference internal" href="#finance_opt.OptimizationResult.__private_attributes__"><code class="docutils literal notranslate"><span class="pre">OptimizationResult.__private_attributes__</span></code></a></li>
+<li><a class="reference internal" href="#finance_opt.OptimizationResult.__signature__"><code class="docutils literal notranslate"><span class="pre">OptimizationResult.__signature__</span></code></a></li>
+<li><a class="reference internal" href="#finance_opt.OptimizationResult.__pydantic_complete__"><code class="docutils literal notranslate"><span class="pre">OptimizationResult.__pydantic_complete__</span></code></a></li>
+<li><a class="reference internal" href="#finance_opt.OptimizationResult.__pydantic_core_schema__"><code class="docutils literal notranslate"><span class="pre">OptimizationResult.__pydantic_core_schema__</span></code></a></li>
+<li><a class="reference internal" href="#finance_opt.OptimizationResult.__pydantic_custom_init__"><code class="docutils literal notranslate"><span class="pre">OptimizationResult.__pydantic_custom_init__</span></code></a></li>
+<li><a class="reference internal" href="#finance_opt.OptimizationResult.__pydantic_decorators__"><code class="docutils literal notranslate"><span class="pre">OptimizationResult.__pydantic_decorators__</span></code></a></li>
+<li><a class="reference internal" href="#finance_opt.OptimizationResult.__pydantic_generic_metadata__"><code class="docutils literal notranslate"><span class="pre">OptimizationResult.__pydantic_generic_metadata__</span></code></a></li>
+<li><a class="reference internal" href="#finance_opt.OptimizationResult.__pydantic_parent_namespace__"><code class="docutils literal notranslate"><span class="pre">OptimizationResult.__pydantic_parent_namespace__</span></code></a></li>
+<li><a class="reference internal" href="#finance_opt.OptimizationResult.__pydantic_post_init__"><code class="docutils literal notranslate"><span class="pre">OptimizationResult.__pydantic_post_init__</span></code></a></li>
+<li><a class="reference internal" href="#finance_opt.OptimizationResult.__pydantic_root_model__"><code class="docutils literal notranslate"><span class="pre">OptimizationResult.__pydantic_root_model__</span></code></a></li>
+<li><a class="reference internal" href="#finance_opt.OptimizationResult.__pydantic_serializer__"><code class="docutils literal notranslate"><span class="pre">OptimizationResult.__pydantic_serializer__</span></code></a></li>
+<li><a class="reference internal" href="#finance_opt.OptimizationResult.__pydantic_validator__"><code class="docutils literal notranslate"><span class="pre">OptimizationResult.__pydantic_validator__</span></code></a></li>
+<li><a class="reference internal" href="#finance_opt.OptimizationResult.__pydantic_fields__"><code class="docutils literal notranslate"><span class="pre">OptimizationResult.__pydantic_fields__</span></code></a></li>
+<li><a class="reference internal" href="#finance_opt.OptimizationResult.__pydantic_computed_fields__"><code class="docutils literal notranslate"><span class="pre">OptimizationResult.__pydantic_computed_fields__</span></code></a></li>
+<li><a class="reference internal" href="#finance_opt.OptimizationResult.__pydantic_extra__"><code class="docutils literal notranslate"><span class="pre">OptimizationResult.__pydantic_extra__</span></code></a></li>
+<li><a class="reference internal" href="#finance_opt.OptimizationResult.__pydantic_fields_set__"><code class="docutils literal notranslate"><span class="pre">OptimizationResult.__pydantic_fields_set__</span></code></a></li>
+<li><a class="reference internal" href="#finance_opt.OptimizationResult.__pydantic_private__"><code class="docutils literal notranslate"><span class="pre">OptimizationResult.__pydantic_private__</span></code></a></li>
+<li><a class="reference internal" href="#finance_opt.OptimizationResult.model_config"><code class="docutils literal notranslate"><span class="pre">OptimizationResult.model_config</span></code></a></li>
+<li><a class="reference internal" href="#finance_opt.OptimizationResult.weights"><code class="docutils literal notranslate"><span class="pre">OptimizationResult.weights</span></code></a></li>
+<li><a class="reference internal" href="#finance_opt.OptimizationResult.objective_value"><code class="docutils literal notranslate"><span class="pre">OptimizationResult.objective_value</span></code></a></li>
+<li><a class="reference internal" href="#finance_opt.OptimizationResult.converged"><code class="docutils literal notranslate"><span class="pre">OptimizationResult.converged</span></code></a></li>
+<li><a class="reference internal" href="#finance_opt.OptimizationResult.iterations"><code class="docutils literal notranslate"><span class="pre">OptimizationResult.iterations</span></code></a></li>
+<li><a class="reference internal" href="#finance_opt.OptimizationResult.diagnostics"><code class="docutils literal notranslate"><span class="pre">OptimizationResult.diagnostics</span></code></a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#finance_opt.OptimizerConfig"><code class="docutils literal notranslate"><span class="pre">OptimizerConfig</span></code></a><ul>
+<li><a class="reference internal" href="#finance_opt.OptimizerConfig.__class_vars__"><code class="docutils literal notranslate"><span class="pre">OptimizerConfig.__class_vars__</span></code></a></li>
+<li><a class="reference internal" href="#finance_opt.OptimizerConfig.__private_attributes__"><code class="docutils literal notranslate"><span class="pre">OptimizerConfig.__private_attributes__</span></code></a></li>
+<li><a class="reference internal" href="#finance_opt.OptimizerConfig.__signature__"><code class="docutils literal notranslate"><span class="pre">OptimizerConfig.__signature__</span></code></a></li>
+<li><a class="reference internal" href="#finance_opt.OptimizerConfig.__pydantic_complete__"><code class="docutils literal notranslate"><span class="pre">OptimizerConfig.__pydantic_complete__</span></code></a></li>
+<li><a class="reference internal" href="#finance_opt.OptimizerConfig.__pydantic_core_schema__"><code class="docutils literal notranslate"><span class="pre">OptimizerConfig.__pydantic_core_schema__</span></code></a></li>
+<li><a class="reference internal" href="#finance_opt.OptimizerConfig.__pydantic_custom_init__"><code class="docutils literal notranslate"><span class="pre">OptimizerConfig.__pydantic_custom_init__</span></code></a></li>
+<li><a class="reference internal" href="#finance_opt.OptimizerConfig.__pydantic_decorators__"><code class="docutils literal notranslate"><span class="pre">OptimizerConfig.__pydantic_decorators__</span></code></a></li>
+<li><a class="reference internal" href="#finance_opt.OptimizerConfig.__pydantic_generic_metadata__"><code class="docutils literal notranslate"><span class="pre">OptimizerConfig.__pydantic_generic_metadata__</span></code></a></li>
+<li><a class="reference internal" href="#finance_opt.OptimizerConfig.__pydantic_parent_namespace__"><code class="docutils literal notranslate"><span class="pre">OptimizerConfig.__pydantic_parent_namespace__</span></code></a></li>
+<li><a class="reference internal" href="#finance_opt.OptimizerConfig.__pydantic_post_init__"><code class="docutils literal notranslate"><span class="pre">OptimizerConfig.__pydantic_post_init__</span></code></a></li>
+<li><a class="reference internal" href="#finance_opt.OptimizerConfig.__pydantic_root_model__"><code class="docutils literal notranslate"><span class="pre">OptimizerConfig.__pydantic_root_model__</span></code></a></li>
+<li><a class="reference internal" href="#finance_opt.OptimizerConfig.__pydantic_serializer__"><code class="docutils literal notranslate"><span class="pre">OptimizerConfig.__pydantic_serializer__</span></code></a></li>
+<li><a class="reference internal" href="#finance_opt.OptimizerConfig.__pydantic_validator__"><code class="docutils literal notranslate"><span class="pre">OptimizerConfig.__pydantic_validator__</span></code></a></li>
+<li><a class="reference internal" href="#finance_opt.OptimizerConfig.__pydantic_fields__"><code class="docutils literal notranslate"><span class="pre">OptimizerConfig.__pydantic_fields__</span></code></a></li>
+<li><a class="reference internal" href="#finance_opt.OptimizerConfig.__pydantic_computed_fields__"><code class="docutils literal notranslate"><span class="pre">OptimizerConfig.__pydantic_computed_fields__</span></code></a></li>
+<li><a class="reference internal" href="#finance_opt.OptimizerConfig.__pydantic_extra__"><code class="docutils literal notranslate"><span class="pre">OptimizerConfig.__pydantic_extra__</span></code></a></li>
+<li><a class="reference internal" href="#finance_opt.OptimizerConfig.__pydantic_fields_set__"><code class="docutils literal notranslate"><span class="pre">OptimizerConfig.__pydantic_fields_set__</span></code></a></li>
+<li><a class="reference internal" href="#finance_opt.OptimizerConfig.__pydantic_private__"><code class="docutils literal notranslate"><span class="pre">OptimizerConfig.__pydantic_private__</span></code></a></li>
+<li><a class="reference internal" href="#finance_opt.OptimizerConfig.model_config"><code class="docutils literal notranslate"><span class="pre">OptimizerConfig.model_config</span></code></a></li>
+<li><a class="reference internal" href="#finance_opt.OptimizerConfig.solver"><code class="docutils literal notranslate"><span class="pre">OptimizerConfig.solver</span></code></a></li>
+<li><a class="reference internal" href="#finance_opt.OptimizerConfig.adapter"><code class="docutils literal notranslate"><span class="pre">OptimizerConfig.adapter</span></code></a></li>
+<li><a class="reference internal" href="#finance_opt.OptimizerConfig.max_iterations"><code class="docutils literal notranslate"><span class="pre">OptimizerConfig.max_iterations</span></code></a></li>
+<li><a class="reference internal" href="#finance_opt.OptimizerConfig.tolerance"><code class="docutils literal notranslate"><span class="pre">OptimizerConfig.tolerance</span></code></a></li>
+<li><a class="reference internal" href="#finance_opt.OptimizerConfig.constraint_penalty"><code class="docutils literal notranslate"><span class="pre">OptimizerConfig.constraint_penalty</span></code></a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#finance_opt.TradingCostSpec"><code class="docutils literal notranslate"><span class="pre">TradingCostSpec</span></code></a><ul>
+<li><a class="reference internal" href="#finance_opt.TradingCostSpec.__class_vars__"><code class="docutils literal notranslate"><span class="pre">TradingCostSpec.__class_vars__</span></code></a></li>
+<li><a class="reference internal" href="#finance_opt.TradingCostSpec.__private_attributes__"><code class="docutils literal notranslate"><span class="pre">TradingCostSpec.__private_attributes__</span></code></a></li>
+<li><a class="reference internal" href="#finance_opt.TradingCostSpec.__signature__"><code class="docutils literal notranslate"><span class="pre">TradingCostSpec.__signature__</span></code></a></li>
+<li><a class="reference internal" href="#finance_opt.TradingCostSpec.__pydantic_complete__"><code class="docutils literal notranslate"><span class="pre">TradingCostSpec.__pydantic_complete__</span></code></a></li>
+<li><a class="reference internal" href="#finance_opt.TradingCostSpec.__pydantic_core_schema__"><code class="docutils literal notranslate"><span class="pre">TradingCostSpec.__pydantic_core_schema__</span></code></a></li>
+<li><a class="reference internal" href="#finance_opt.TradingCostSpec.__pydantic_custom_init__"><code class="docutils literal notranslate"><span class="pre">TradingCostSpec.__pydantic_custom_init__</span></code></a></li>
+<li><a class="reference internal" href="#finance_opt.TradingCostSpec.__pydantic_decorators__"><code class="docutils literal notranslate"><span class="pre">TradingCostSpec.__pydantic_decorators__</span></code></a></li>
+<li><a class="reference internal" href="#finance_opt.TradingCostSpec.__pydantic_generic_metadata__"><code class="docutils literal notranslate"><span class="pre">TradingCostSpec.__pydantic_generic_metadata__</span></code></a></li>
+<li><a class="reference internal" href="#finance_opt.TradingCostSpec.__pydantic_parent_namespace__"><code class="docutils literal notranslate"><span class="pre">TradingCostSpec.__pydantic_parent_namespace__</span></code></a></li>
+<li><a class="reference internal" href="#finance_opt.TradingCostSpec.__pydantic_post_init__"><code class="docutils literal notranslate"><span class="pre">TradingCostSpec.__pydantic_post_init__</span></code></a></li>
+<li><a class="reference internal" href="#finance_opt.TradingCostSpec.__pydantic_root_model__"><code class="docutils literal notranslate"><span class="pre">TradingCostSpec.__pydantic_root_model__</span></code></a></li>
+<li><a class="reference internal" href="#finance_opt.TradingCostSpec.__pydantic_serializer__"><code class="docutils literal notranslate"><span class="pre">TradingCostSpec.__pydantic_serializer__</span></code></a></li>
+<li><a class="reference internal" href="#finance_opt.TradingCostSpec.__pydantic_validator__"><code class="docutils literal notranslate"><span class="pre">TradingCostSpec.__pydantic_validator__</span></code></a></li>
+<li><a class="reference internal" href="#finance_opt.TradingCostSpec.__pydantic_fields__"><code class="docutils literal notranslate"><span class="pre">TradingCostSpec.__pydantic_fields__</span></code></a></li>
+<li><a class="reference internal" href="#finance_opt.TradingCostSpec.__pydantic_computed_fields__"><code class="docutils literal notranslate"><span class="pre">TradingCostSpec.__pydantic_computed_fields__</span></code></a></li>
+<li><a class="reference internal" href="#finance_opt.TradingCostSpec.__pydantic_extra__"><code class="docutils literal notranslate"><span class="pre">TradingCostSpec.__pydantic_extra__</span></code></a></li>
+<li><a class="reference internal" href="#finance_opt.TradingCostSpec.__pydantic_fields_set__"><code class="docutils literal notranslate"><span class="pre">TradingCostSpec.__pydantic_fields_set__</span></code></a></li>
+<li><a class="reference internal" href="#finance_opt.TradingCostSpec.__pydantic_private__"><code class="docutils literal notranslate"><span class="pre">TradingCostSpec.__pydantic_private__</span></code></a></li>
+<li><a class="reference internal" href="#finance_opt.TradingCostSpec.model_config"><code class="docutils literal notranslate"><span class="pre">TradingCostSpec.model_config</span></code></a></li>
+<li><a class="reference internal" href="#finance_opt.TradingCostSpec.linear_fee_bps"><code class="docutils literal notranslate"><span class="pre">TradingCostSpec.linear_fee_bps</span></code></a></li>
+<li><a class="reference internal" href="#finance_opt.TradingCostSpec.spread_bps"><code class="docutils literal notranslate"><span class="pre">TradingCostSpec.spread_bps</span></code></a></li>
+<li><a class="reference internal" href="#finance_opt.TradingCostSpec.turnover_penalty"><code class="docutils literal notranslate"><span class="pre">TradingCostSpec.turnover_penalty</span></code></a></li>
+<li><a class="reference internal" href="#finance_opt.TradingCostSpec.impact_coefficient"><code class="docutils literal notranslate"><span class="pre">TradingCostSpec.impact_coefficient</span></code></a></li>
+</ul>
+</li>
 </ul>
 </li>
 </ul>

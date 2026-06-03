@@ -9,11 +9,26 @@ Functions
 
 .. autoapisummary::
 
-   test_all.test_all
+   test_all.test_optimize_mean_variance_smoke
+   test_all.test_optimize_rejects_bad_covariance_shape
+   test_all.test_optimize_supports_turnover_liquidity_lot_and_leverage_constraints
+   test_all.test_optimize_applies_factor_and_sector_bounds
+   test_all.test_optimize_cost_model_reduces_turnover_when_penalty_increases
+   test_all.test_solver_adapter_modes_return_feasible_weights
 
 
 Module Contents
 ---------------
 
-.. py:function:: test_all()
+.. py:function:: test_optimize_mean_variance_smoke() -> None
+
+.. py:function:: test_optimize_rejects_bad_covariance_shape() -> None
+
+.. py:function:: test_optimize_supports_turnover_liquidity_lot_and_leverage_constraints() -> None
+
+.. py:function:: test_optimize_applies_factor_and_sector_bounds() -> None
+
+.. py:function:: test_optimize_cost_model_reduces_turnover_when_penalty_increases() -> None
+
+.. py:function:: test_solver_adapter_modes_return_feasible_weights() -> None
 

@@ -1,0 +1,26 @@
+finance_opt.optimization
+========================
+
+.. py:module:: finance_opt.optimization
+
+
+Functions
+---------
+
+.. autoapisummary::
+
+   finance_opt.optimization.optimize_mean_variance
+
+
+Module Contents
+---------------
+
+.. py:function:: optimize_mean_variance(problem: finance_opt.schemas.OptimizationProblem | dict[str, Any]) -> finance_opt.schemas.OptimizationResult
+
+   Solve a single-period mean-variance allocation problem.
+
+   This is phase-8.5 starter scope: the API supports objective,
+   constraints, and solver configuration while currently using a
+   quadratic closed-form approximation under the hood.
+
+

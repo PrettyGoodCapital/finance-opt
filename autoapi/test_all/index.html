@@ -199,7 +199,11 @@
   <ul class="current">
 <li class="toctree-l1 current has-children"><a class="reference internal" href="../index.html">API Reference</a><input aria-label="Toggle navigation of API Reference" checked="" class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" role="switch" type="checkbox"/><label for="toctree-checkbox-1"><span class="icon"><svg><use href="#svg-arrow-right"></use></svg></span></label><ul class="current">
 <li class="toctree-l2 current current-page"><a class="current reference internal" href="#">test_all</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../finance_opt/index.html">finance_opt</a></li>
+<li class="toctree-l2 has-children"><a class="reference internal" href="../finance_opt/index.html">finance_opt</a><input aria-label="Toggle navigation of finance_opt" class="toctree-checkbox" id="toctree-checkbox-2" name="toctree-checkbox-2" role="switch" type="checkbox"/><label for="toctree-checkbox-2"><span class="icon"><svg><use href="#svg-arrow-right"></use></svg></span></label><ul>
+<li class="toctree-l3"><a class="reference internal" href="../finance_opt/optimization/index.html">finance_opt.optimization</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../finance_opt/schemas/index.html">finance_opt.schemas</a></li>
+</ul>
+</li>
 </ul>
 </li>
 </ul>
@@ -247,7 +251,22 @@
 <div class="table-wrapper autosummary longtable docutils container">
 <table class="autosummary longtable docutils align-default">
 <tbody>
-<tr class="row-odd"><td><p><a class="reference internal" href="#test_all.test_all" title="test_all.test_all"><code class="xref py py-obj docutils literal notranslate"><span class="pre">test_all</span></code></a>()</p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="#test_all.test_optimize_mean_variance_smoke" title="test_all.test_optimize_mean_variance_smoke"><code class="xref py py-obj docutils literal notranslate"><span class="pre">test_optimize_mean_variance_smoke</span></code></a>(→ None)</p></td>
+<td><p></p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#test_all.test_optimize_rejects_bad_covariance_shape" title="test_all.test_optimize_rejects_bad_covariance_shape"><code class="xref py py-obj docutils literal notranslate"><span class="pre">test_optimize_rejects_bad_covariance_shape</span></code></a>(→ None)</p></td>
+<td><p></p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#test_all.test_optimize_supports_turnover_liquidity_lot_and_leverage_constraints" title="test_all.test_optimize_supports_turnover_liquidity_lot_and_leverage_constraints"><code class="xref py py-obj docutils literal notranslate"><span class="pre">test_optimize_supports_turnover_liquidity_lot_and_leverage_constraints</span></code></a>(→ None)</p></td>
+<td><p></p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#test_all.test_optimize_applies_factor_and_sector_bounds" title="test_all.test_optimize_applies_factor_and_sector_bounds"><code class="xref py py-obj docutils literal notranslate"><span class="pre">test_optimize_applies_factor_and_sector_bounds</span></code></a>(→ None)</p></td>
+<td><p></p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#test_all.test_optimize_cost_model_reduces_turnover_when_penalty_increases" title="test_all.test_optimize_cost_model_reduces_turnover_when_penalty_increases"><code class="xref py py-obj docutils literal notranslate"><span class="pre">test_optimize_cost_model_reduces_turnover_when_penalty_increases</span></code></a>(→ None)</p></td>
+<td><p></p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#test_all.test_solver_adapter_modes_return_feasible_weights" title="test_all.test_solver_adapter_modes_return_feasible_weights"><code class="xref py py-obj docutils literal notranslate"><span class="pre">test_solver_adapter_modes_return_feasible_weights</span></code></a>(→ None)</p></td>
 <td><p></p></td>
 </tr>
 </tbody>
@@ -257,8 +276,33 @@
 <section id="module-contents">
 <h2>Module Contents<a class="headerlink" href="#module-contents" title="Link to this heading">¶</a></h2>
 <dl class="py function">
-<dt class="sig sig-object py" id="test_all.test_all">
-<span class="sig-prename descclassname"><span class="pre">test_all.</span></span><span class="sig-name descname"><span class="pre">test_all</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#test_all.test_all" title="Link to this definition">¶</a></dt>
+<dt class="sig sig-object py" id="test_all.test_optimize_mean_variance_smoke">
+<span class="sig-prename descclassname"><span class="pre">test_all.</span></span><span class="sig-name descname"><span class="pre">test_optimize_mean_variance_smoke</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">None</span></span></span><a class="headerlink" href="#test_all.test_optimize_mean_variance_smoke" title="Link to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="test_all.test_optimize_rejects_bad_covariance_shape">
+<span class="sig-prename descclassname"><span class="pre">test_all.</span></span><span class="sig-name descname"><span class="pre">test_optimize_rejects_bad_covariance_shape</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">None</span></span></span><a class="headerlink" href="#test_all.test_optimize_rejects_bad_covariance_shape" title="Link to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="test_all.test_optimize_supports_turnover_liquidity_lot_and_leverage_constraints">
+<span class="sig-prename descclassname"><span class="pre">test_all.</span></span><span class="sig-name descname"><span class="pre">test_optimize_supports_turnover_liquidity_lot_and_leverage_constraints</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">None</span></span></span><a class="headerlink" href="#test_all.test_optimize_supports_turnover_liquidity_lot_and_leverage_constraints" title="Link to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="test_all.test_optimize_applies_factor_and_sector_bounds">
+<span class="sig-prename descclassname"><span class="pre">test_all.</span></span><span class="sig-name descname"><span class="pre">test_optimize_applies_factor_and_sector_bounds</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">None</span></span></span><a class="headerlink" href="#test_all.test_optimize_applies_factor_and_sector_bounds" title="Link to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="test_all.test_optimize_cost_model_reduces_turnover_when_penalty_increases">
+<span class="sig-prename descclassname"><span class="pre">test_all.</span></span><span class="sig-name descname"><span class="pre">test_optimize_cost_model_reduces_turnover_when_penalty_increases</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">None</span></span></span><a class="headerlink" href="#test_all.test_optimize_cost_model_reduces_turnover_when_penalty_increases" title="Link to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="test_all.test_solver_adapter_modes_return_feasible_weights">
+<span class="sig-prename descclassname"><span class="pre">test_all.</span></span><span class="sig-name descname"><span class="pre">test_solver_adapter_modes_return_feasible_weights</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">None</span></span></span><a class="headerlink" href="#test_all.test_solver_adapter_modes_return_feasible_weights" title="Link to this definition">¶</a></dt>
 <dd></dd></dl>
 
 </section>
@@ -322,7 +366,12 @@
 <li><a class="reference internal" href="#">test_all</a><ul>
 <li><a class="reference internal" href="#functions">Functions</a></li>
 <li><a class="reference internal" href="#module-contents">Module Contents</a><ul>
-<li><a class="reference internal" href="#test_all.test_all"><code class="docutils literal notranslate"><span class="pre">test_all()</span></code></a></li>
+<li><a class="reference internal" href="#test_all.test_optimize_mean_variance_smoke"><code class="docutils literal notranslate"><span class="pre">test_optimize_mean_variance_smoke()</span></code></a></li>
+<li><a class="reference internal" href="#test_all.test_optimize_rejects_bad_covariance_shape"><code class="docutils literal notranslate"><span class="pre">test_optimize_rejects_bad_covariance_shape()</span></code></a></li>
+<li><a class="reference internal" href="#test_all.test_optimize_supports_turnover_liquidity_lot_and_leverage_constraints"><code class="docutils literal notranslate"><span class="pre">test_optimize_supports_turnover_liquidity_lot_and_leverage_constraints()</span></code></a></li>
+<li><a class="reference internal" href="#test_all.test_optimize_applies_factor_and_sector_bounds"><code class="docutils literal notranslate"><span class="pre">test_optimize_applies_factor_and_sector_bounds()</span></code></a></li>
+<li><a class="reference internal" href="#test_all.test_optimize_cost_model_reduces_turnover_when_penalty_increases"><code class="docutils literal notranslate"><span class="pre">test_optimize_cost_model_reduces_turnover_when_penalty_increases()</span></code></a></li>
+<li><a class="reference internal" href="#test_all.test_solver_adapter_modes_return_feasible_weights"><code class="docutils literal notranslate"><span class="pre">test_solver_adapter_modes_return_feasible_weights()</span></code></a></li>
 </ul>
 </li>
 </ul>
