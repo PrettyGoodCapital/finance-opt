@@ -27,8 +27,25 @@ Classes
    finance_opt.TradingCostSpec
 
 
+Functions
+---------
+
+.. autoapisummary::
+
+   finance_opt.optimize_mean_variance
+
+
 Package Contents
 ----------------
+
+.. py:function:: optimize_mean_variance(problem: finance_opt.schemas.OptimizationProblem | dict[str, Any]) -> finance_opt.schemas.OptimizationResult
+
+   Solve a single-period mean-variance allocation problem.
+
+   This is phase-8.5 starter scope: the API supports objective,
+   constraints, and solver configuration while currently using a
+   quadratic closed-form approximation under the hood.
+
 
 .. py:class:: ConstraintSpec(/, **data: Any)
 

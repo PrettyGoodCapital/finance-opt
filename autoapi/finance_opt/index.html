@@ -282,8 +282,29 @@
 </table>
 </div>
 </section>
+<section id="functions">
+<h2>Functions<a class="headerlink" href="#functions" title="Link to this heading">¶</a></h2>
+<div class="table-wrapper autosummary longtable docutils container">
+<table class="autosummary longtable docutils align-default">
+<tbody>
+<tr class="row-odd"><td><p><a class="reference internal" href="#finance_opt.optimize_mean_variance" title="finance_opt.optimize_mean_variance"><code class="xref py py-obj docutils literal notranslate"><span class="pre">optimize_mean_variance</span></code></a>(...)</p></td>
+<td><p>Solve a single-period mean-variance allocation problem.</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</section>
 <section id="package-contents">
 <h2>Package Contents<a class="headerlink" href="#package-contents" title="Link to this heading">¶</a></h2>
+<dl class="py function">
+<dt class="sig sig-object py" id="finance_opt.optimize_mean_variance">
+<span class="sig-prename descclassname"><span class="pre">finance_opt.</span></span><span class="sig-name descname"><span class="pre">optimize_mean_variance</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">problem</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference internal" href="schemas/index.html#finance_opt.schemas.OptimizationProblem" title="finance_opt.schemas.OptimizationProblem"><span class="pre">finance_opt.schemas.OptimizationProblem</span></a><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><span class="pre">dict</span><span class="p"><span class="pre">[</span></span><span class="pre">str</span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">Any</span><span class="p"><span class="pre">]</span></span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><a class="reference internal" href="schemas/index.html#finance_opt.schemas.OptimizationResult" title="finance_opt.schemas.OptimizationResult"><span class="pre">finance_opt.schemas.OptimizationResult</span></a></span></span><a class="reference internal" href="../../_modules/finance_opt/optimization.html#optimize_mean_variance"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#finance_opt.optimize_mean_variance" title="Link to this definition">¶</a></dt>
+<dd><p>Solve a single-period mean-variance allocation problem.</p>
+<p>This is phase-8.5 starter scope: the API supports objective,
+constraints, and solver configuration while currently using a
+quadratic closed-form approximation under the hood.</p>
+</dd></dl>
+
 <dl class="py class">
 <dt class="sig sig-object py" id="finance_opt.ConstraintSpec">
 <em class="property"><span class="k"><span class="pre">class</span></span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">finance_opt.</span></span><span class="sig-name descname"><span class="pre">ConstraintSpec</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">/</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">**data:</span> <span class="pre">Any</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="../../_modules/finance_opt/schemas.html#ConstraintSpec"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#finance_opt.ConstraintSpec" title="Link to this definition">¶</a></dt>
@@ -1339,7 +1360,9 @@ validated to form a valid model.</p>
 <li><a class="reference internal" href="#">finance_opt</a><ul>
 <li><a class="reference internal" href="#submodules">Submodules</a></li>
 <li><a class="reference internal" href="#classes">Classes</a></li>
+<li><a class="reference internal" href="#functions">Functions</a></li>
 <li><a class="reference internal" href="#package-contents">Package Contents</a><ul>
+<li><a class="reference internal" href="#finance_opt.optimize_mean_variance"><code class="docutils literal notranslate"><span class="pre">optimize_mean_variance()</span></code></a></li>
 <li><a class="reference internal" href="#finance_opt.ConstraintSpec"><code class="docutils literal notranslate"><span class="pre">ConstraintSpec</span></code></a><ul>
 <li><a class="reference internal" href="#finance_opt.ConstraintSpec.__class_vars__"><code class="docutils literal notranslate"><span class="pre">ConstraintSpec.__class_vars__</span></code></a></li>
 <li><a class="reference internal" href="#finance_opt.ConstraintSpec.__private_attributes__"><code class="docutils literal notranslate"><span class="pre">ConstraintSpec.__private_attributes__</span></code></a></li>
