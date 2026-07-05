@@ -128,9 +128,9 @@ fail_under = 50
 
 [tool.hatch.build]
 artifacts = [
-    "project/*.dll",
-    "project/*.dylib",
-    "project/*.so",
+    "finance_opt/*.dll",
+    "finance_opt/*.dylib",
+    "finance_opt/*.so",
 ]
 
 [tool.hatch.build.sources]
