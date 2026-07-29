@@ -1,8 +1,4 @@
-<<<<<<< before updating
 from __future__ import annotations
-=======
-from finance_opt import *
->>>>>>> after updating
 
 import pytest
 
