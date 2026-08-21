@@ -245,12 +245,12 @@
 <span class="kn">from</span><span class="w"> </span><span class="nn">pydantic</span><span class="w"> </span><span class="kn">import</span> <span class="n">BaseModel</span><span class="p">,</span> <span class="n">ConfigDict</span><span class="p">,</span> <span class="n">Field</span><span class="p">,</span> <span class="n">field_validator</span>
 
 <span class="n">__all__</span> <span class="o">=</span> <span class="p">[</span>
-    <span class="s2">&quot;ConstraintSpec&quot;</span><span class="p">,</span>
-    <span class="s2">&quot;ObjectiveSpec&quot;</span><span class="p">,</span>
-    <span class="s2">&quot;OptimizationProblem&quot;</span><span class="p">,</span>
-    <span class="s2">&quot;OptimizationResult&quot;</span><span class="p">,</span>
-    <span class="s2">&quot;OptimizerConfig&quot;</span><span class="p">,</span>
-    <span class="s2">&quot;TradingCostSpec&quot;</span><span class="p">,</span>
+    <span class="s2">"ConstraintSpec"</span><span class="p">,</span>
+    <span class="s2">"ObjectiveSpec"</span><span class="p">,</span>
+    <span class="s2">"OptimizationProblem"</span><span class="p">,</span>
+    <span class="s2">"OptimizationResult"</span><span class="p">,</span>
+    <span class="s2">"OptimizerConfig"</span><span class="p">,</span>
+    <span class="s2">"TradingCostSpec"</span><span class="p">,</span>
 <span class="p">]</span>
 
 
@@ -259,7 +259,7 @@
 <span class="k">class</span><span class="w"> </span><span class="nc">ObjectiveSpec</span><span class="p">(</span><span class="n">BaseModel</span><span class="p">):</span>
     <span class="n">model_config</span> <span class="o">=</span> <span class="n">ConfigDict</span><span class="p">(</span><span class="n">frozen</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
 
-    <span class="n">name</span><span class="p">:</span> <span class="n">Literal</span><span class="p">[</span><span class="s2">&quot;min_variance&quot;</span><span class="p">,</span> <span class="s2">&quot;max_sharpe&quot;</span><span class="p">,</span> <span class="s2">&quot;mean_variance&quot;</span><span class="p">]</span> <span class="o">=</span> <span class="s2">&quot;mean_variance&quot;</span>
+    <span class="n">name</span><span class="p">:</span> <span class="n">Literal</span><span class="p">[</span><span class="s2">"min_variance"</span><span class="p">,</span> <span class="s2">"max_sharpe"</span><span class="p">,</span> <span class="s2">"mean_variance"</span><span class="p">]</span> <span class="o">=</span> <span class="s2">"mean_variance"</span>
     <span class="n">risk_aversion</span><span class="p">:</span> <span class="nb">float</span> <span class="o">=</span> <span class="n">Field</span><span class="p">(</span><span class="n">default</span><span class="o">=</span><span class="mf">1.0</span><span class="p">,</span> <span class="n">ge</span><span class="o">=</span><span class="mf">0.0</span><span class="p">)</span></div>
 
 
@@ -292,12 +292,12 @@
 
 <div class="viewcode-block" id="ConstraintSpec._validate_bounds">
 <a class="viewcode-back" href="../../autoapi/finance_opt/schemas/index.html#finance_opt.ConstraintSpec._validate_bounds">[docs]</a>
-    <span class="nd">@field_validator</span><span class="p">(</span><span class="s2">&quot;max_weight&quot;</span><span class="p">)</span>
+    <span class="nd">@field_validator</span><span class="p">(</span><span class="s2">"max_weight"</span><span class="p">)</span>
     <span class="nd">@classmethod</span>
     <span class="k">def</span><span class="w"> </span><span class="nf">_validate_bounds</span><span class="p">(</span><span class="bp">cls</span><span class="p">,</span> <span class="n">value</span><span class="p">:</span> <span class="nb">float</span> <span class="o">|</span> <span class="kc">None</span><span class="p">,</span> <span class="n">info</span><span class="p">):</span>
-        <span class="n">min_weight</span> <span class="o">=</span> <span class="n">info</span><span class="o">.</span><span class="n">data</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s2">&quot;min_weight&quot;</span><span class="p">)</span>
+        <span class="n">min_weight</span> <span class="o">=</span> <span class="n">info</span><span class="o">.</span><span class="n">data</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s2">"min_weight"</span><span class="p">)</span>
         <span class="k">if</span> <span class="n">value</span> <span class="ow">is</span> <span class="ow">not</span> <span class="kc">None</span> <span class="ow">and</span> <span class="n">min_weight</span> <span class="ow">is</span> <span class="ow">not</span> <span class="kc">None</span> <span class="ow">and</span> <span class="n">value</span> <span class="o">&lt;</span> <span class="n">min_weight</span><span class="p">:</span>
-            <span class="k">raise</span> <span class="ne">ValueError</span><span class="p">(</span><span class="s2">&quot;max_weight must be &gt;= min_weight&quot;</span><span class="p">)</span>
+            <span class="k">raise</span> <span class="ne">ValueError</span><span class="p">(</span><span class="s2">"max_weight must be &gt;= min_weight"</span><span class="p">)</span>
         <span class="k">return</span> <span class="n">value</span></div>
 </div>
 
@@ -308,8 +308,8 @@
 <span class="k">class</span><span class="w"> </span><span class="nc">OptimizerConfig</span><span class="p">(</span><span class="n">BaseModel</span><span class="p">):</span>
     <span class="n">model_config</span> <span class="o">=</span> <span class="n">ConfigDict</span><span class="p">(</span><span class="n">frozen</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
 
-    <span class="n">solver</span><span class="p">:</span> <span class="n">Literal</span><span class="p">[</span><span class="s2">&quot;auto&quot;</span><span class="p">,</span> <span class="s2">&quot;native&quot;</span><span class="p">,</span> <span class="s2">&quot;projected_gradient&quot;</span><span class="p">]</span> <span class="o">=</span> <span class="s2">&quot;auto&quot;</span>
-    <span class="n">adapter</span><span class="p">:</span> <span class="n">Literal</span><span class="p">[</span><span class="s2">&quot;auto&quot;</span><span class="p">,</span> <span class="s2">&quot;clarabel_like&quot;</span><span class="p">,</span> <span class="s2">&quot;numpy_qp&quot;</span><span class="p">]</span> <span class="o">=</span> <span class="s2">&quot;auto&quot;</span>
+    <span class="n">solver</span><span class="p">:</span> <span class="n">Literal</span><span class="p">[</span><span class="s2">"auto"</span><span class="p">,</span> <span class="s2">"native"</span><span class="p">,</span> <span class="s2">"projected_gradient"</span><span class="p">]</span> <span class="o">=</span> <span class="s2">"auto"</span>
+    <span class="n">adapter</span><span class="p">:</span> <span class="n">Literal</span><span class="p">[</span><span class="s2">"auto"</span><span class="p">,</span> <span class="s2">"clarabel_like"</span><span class="p">,</span> <span class="s2">"numpy_qp"</span><span class="p">]</span> <span class="o">=</span> <span class="s2">"auto"</span>
     <span class="n">max_iterations</span><span class="p">:</span> <span class="nb">int</span> <span class="o">=</span> <span class="n">Field</span><span class="p">(</span><span class="n">default</span><span class="o">=</span><span class="mi">500</span><span class="p">,</span> <span class="n">ge</span><span class="o">=</span><span class="mi">1</span><span class="p">)</span>
     <span class="n">tolerance</span><span class="p">:</span> <span class="nb">float</span> <span class="o">=</span> <span class="n">Field</span><span class="p">(</span><span class="n">default</span><span class="o">=</span><span class="mf">1e-8</span><span class="p">,</span> <span class="n">gt</span><span class="o">=</span><span class="mf">0.0</span><span class="p">)</span>
     <span class="n">constraint_penalty</span><span class="p">:</span> <span class="nb">float</span> <span class="o">=</span> <span class="n">Field</span><span class="p">(</span><span class="n">default</span><span class="o">=</span><span class="mf">250.0</span><span class="p">,</span> <span class="n">gt</span><span class="o">=</span><span class="mf">0.0</span><span class="p">)</span></div>
