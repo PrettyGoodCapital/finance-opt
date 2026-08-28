@@ -640,51 +640,51 @@ Module Contents
 
 
    .. py:attribute:: expected_returns
-      :type:  tuple[float, Ellipsis]
+      :type:  tuple[float, ...]
 
 
    .. py:attribute:: covariance
-      :type:  tuple[tuple[float, Ellipsis], Ellipsis]
+      :type:  tuple[tuple[float, ...], ...]
 
 
    .. py:attribute:: asset_names
-      :type:  tuple[str, Ellipsis] | None
+      :type:  tuple[str, ...] | None
       :value: None
 
 
 
    .. py:attribute:: current_weights
-      :type:  tuple[float, Ellipsis] | None
+      :type:  tuple[float, ...] | None
       :value: None
 
 
 
    .. py:attribute:: liquidity_limits
-      :type:  tuple[float, Ellipsis] | None
+      :type:  tuple[float, ...] | None
       :value: None
 
 
 
    .. py:attribute:: lot_sizes
-      :type:  tuple[float, Ellipsis] | None
+      :type:  tuple[float, ...] | None
       :value: None
 
 
 
    .. py:attribute:: factor_names
-      :type:  tuple[str, Ellipsis] | None
+      :type:  tuple[str, ...] | None
       :value: None
 
 
 
    .. py:attribute:: factor_loadings
-      :type:  tuple[tuple[float, Ellipsis], Ellipsis] | None
+      :type:  tuple[tuple[float, ...], ...] | None
       :value: None
 
 
 
    .. py:attribute:: sector_labels
-      :type:  tuple[str, Ellipsis] | None
+      :type:  tuple[str, ...] | None
       :value: None
 
 
@@ -814,7 +814,7 @@ Module Contents
 
 
    .. py:attribute:: weights
-      :type:  tuple[float, Ellipsis]
+      :type:  tuple[float, ...]
 
 
    .. py:attribute:: objective_value
