@@ -128,8 +128,6 @@ Module Contents
 
    .. py:attribute:: risk_aversion
       :type:  float
-      :value: None
-
 
 
 .. py:class:: TradingCostSpec(/, **data: Any)
@@ -234,26 +232,18 @@ Module Contents
 
    .. py:attribute:: linear_fee_bps
       :type:  float
-      :value: None
-
 
 
    .. py:attribute:: spread_bps
       :type:  float
-      :value: None
-
 
 
    .. py:attribute:: turnover_penalty
       :type:  float
-      :value: None
-
 
 
    .. py:attribute:: impact_coefficient
       :type:  float
-      :value: None
-
 
 
 .. py:class:: ConstraintSpec(/, **data: Any)
@@ -382,26 +372,18 @@ Module Contents
 
    .. py:attribute:: leverage_limit
       :type:  float | None
-      :value: None
-
 
 
    .. py:attribute:: max_turnover
       :type:  float | None
-      :value: None
-
 
 
    .. py:attribute:: factor_bounds
       :type:  dict[str, tuple[float | None, float | None]]
-      :value: None
-
 
 
    .. py:attribute:: sector_bounds
       :type:  dict[str, tuple[float | None, float | None]]
-      :value: None
-
 
 
    .. py:method:: _validate_bounds(value: float | None, info)
@@ -523,20 +505,14 @@ Module Contents
 
    .. py:attribute:: max_iterations
       :type:  int
-      :value: None
-
 
 
    .. py:attribute:: tolerance
       :type:  float
-      :value: None
-
 
 
    .. py:attribute:: constraint_penalty
       :type:  float
-      :value: None
-
 
 
 .. py:class:: OptimizationProblem(/, **data: Any)
@@ -691,26 +667,18 @@ Module Contents
 
    .. py:attribute:: objective
       :type:  ObjectiveSpec
-      :value: None
-
 
 
    .. py:attribute:: costs
       :type:  TradingCostSpec
-      :value: None
-
 
 
    .. py:attribute:: constraints
       :type:  ConstraintSpec
-      :value: None
-
 
 
    .. py:attribute:: config
       :type:  OptimizerConfig
-      :value: None
-
 
 
 .. py:class:: OptimizationResult(/, **data: Any)
@@ -831,7 +799,5 @@ Module Contents
 
    .. py:attribute:: diagnostics
       :type:  dict[str, float]
-      :value: None
-
 
 

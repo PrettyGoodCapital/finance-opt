@@ -3,7 +3,7 @@
   <head><meta charset="utf-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <meta name="color-scheme" content="light dark"><meta name="viewport" content="width=device-width, initial-scale=1" />
-<link rel="index" title="Index" href="../../genindex.html"><link rel="search" title="Search" href="../../search.html"><link rel="next" title="finance_opt.optimization" href="optimization/index.html"><link rel="prev" title="test_all" href="../test_all/index.html">
+<link rel="index" title="Index" href="../../genindex.html"><link rel="search" title="Search" href="../../search.html"><link rel="next" title="finance_opt.finance_opt" href="finance_opt/index.html"><link rel="prev" title="test_all" href="../test_all/index.html">
 
     <!-- Generated with Sphinx 8.2.3 and Furo 2025.12.19 -->
         <title>finance_opt - finance opt v0.1.0</title>
@@ -201,6 +201,7 @@
 <li class="toctree-l1 current has-children"><a class="reference internal" href="../index.html">API Reference</a><input aria-label="Toggle navigation of API Reference" checked="" class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" role="switch" type="checkbox"/><label for="toctree-checkbox-1"><span class="icon"><svg><use href="#svg-arrow-right"></use></svg></span></label><ul class="current">
 <li class="toctree-l2"><a class="reference internal" href="../test_all/index.html">test_all</a></li>
 <li class="toctree-l2 current has-children current-page"><a class="current reference internal" href="#">finance_opt</a><input aria-label="Toggle navigation of finance_opt" checked="" class="toctree-checkbox" id="toctree-checkbox-2" name="toctree-checkbox-2" role="switch" type="checkbox"/><label for="toctree-checkbox-2"><span class="icon"><svg><use href="#svg-arrow-right"></use></svg></span></label><ul>
+<li class="toctree-l3"><a class="reference internal" href="finance_opt/index.html">finance_opt.finance_opt</a></li>
 <li class="toctree-l3"><a class="reference internal" href="optimization/index.html">finance_opt.optimization</a></li>
 <li class="toctree-l3"><a class="reference internal" href="schemas/index.html">finance_opt.schemas</a></li>
 </ul>
@@ -251,6 +252,7 @@
 <h2>Submodules<a class="headerlink" href="#submodules" title="Link to this heading">¶</a></h2>
 <div class="toctree-wrapper compound">
 <ul>
+<li class="toctree-l1"><a class="reference internal" href="finance_opt/index.html">finance_opt.finance_opt</a></li>
 <li class="toctree-l1"><a class="reference internal" href="optimization/index.html">finance_opt.optimization</a></li>
 <li class="toctree-l1"><a class="reference internal" href="schemas/index.html">finance_opt.schemas</a></li>
 </ul>
@@ -283,8 +285,37 @@
 </table>
 </div>
 </section>
+<section id="functions">
+<h2>Functions<a class="headerlink" href="#functions" title="Link to this heading">¶</a></h2>
+<div class="table-wrapper autosummary longtable docutils container">
+<table class="autosummary longtable docutils align-default">
+<tbody>
+<tr class="row-odd"><td><p><a class="reference internal" href="#finance_opt.solve_mean_variance" title="finance_opt.solve_mean_variance"><code class="xref py py-obj docutils literal notranslate"><span class="pre">solve_mean_variance</span></code></a>(→ list[float])</p></td>
+<td><p></p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#finance_opt.optimize_mean_variance" title="finance_opt.optimize_mean_variance"><code class="xref py py-obj docutils literal notranslate"><span class="pre">optimize_mean_variance</span></code></a>(...)</p></td>
+<td><p>Solve a single-period mean-variance allocation problem.</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</section>
 <section id="package-contents">
 <h2>Package Contents<a class="headerlink" href="#package-contents" title="Link to this heading">¶</a></h2>
+<dl class="py function">
+<dt class="sig sig-object py" id="finance_opt.solve_mean_variance">
+<span class="sig-prename descclassname"><span class="pre">finance_opt.</span></span><span class="sig-name descname"><span class="pre">solve_mean_variance</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">expected_returns</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">collections.abc.Sequence</span><span class="p"><span class="pre">[</span></span><span class="pre">float</span><span class="p"><span class="pre">]</span></span></span></em>, <em class="sig-param"><span class="n"><span class="pre">covariance</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">collections.abc.Sequence</span><span class="p"><span class="pre">[</span></span><span class="pre">collections.abc.Sequence</span><span class="p"><span class="pre">[</span></span><span class="pre">float</span><span class="p"><span class="pre">]</span></span><span class="p"><span class="pre">]</span></span></span></em>, <em class="sig-param"><span class="n"><span class="pre">risk_aversion</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">float</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">max_iterations</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">int</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">tolerance</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">float</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">list</span><span class="p"><span class="pre">[</span></span><span class="pre">float</span><span class="p"><span class="pre">]</span></span></span></span><a class="headerlink" href="#finance_opt.solve_mean_variance" title="Link to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="finance_opt.optimize_mean_variance">
+<span class="sig-prename descclassname"><span class="pre">finance_opt.</span></span><span class="sig-name descname"><span class="pre">optimize_mean_variance</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">problem</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference internal" href="schemas/index.html#finance_opt.schemas.OptimizationProblem" title="finance_opt.schemas.OptimizationProblem"><span class="pre">finance_opt.schemas.OptimizationProblem</span></a><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><span class="pre">dict</span><span class="p"><span class="pre">[</span></span><span class="pre">str</span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">Any</span><span class="p"><span class="pre">]</span></span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><a class="reference internal" href="schemas/index.html#finance_opt.schemas.OptimizationResult" title="finance_opt.schemas.OptimizationResult"><span class="pre">finance_opt.schemas.OptimizationResult</span></a></span></span><a class="reference internal" href="../../_modules/finance_opt/optimization.html#optimize_mean_variance"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#finance_opt.optimize_mean_variance" title="Link to this definition">¶</a></dt>
+<dd><p>Solve a single-period mean-variance allocation problem.</p>
+<p>This is phase-8.5 starter scope: the API supports objective,
+constraints, and solver configuration while currently using a
+quadratic closed-form approximation under the hood.</p>
+</dd></dl>
+
 <dl class="py class">
 <dt class="sig sig-object py" id="finance_opt.ConstraintSpec">
 <em class="property"><span class="k"><span class="pre">class</span></span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">finance_opt.</span></span><span class="sig-name descname"><span class="pre">ConstraintSpec</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">/</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">**data:</span> <span class="pre">Any</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="../../_modules/finance_opt/schemas.html#ConstraintSpec"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#finance_opt.ConstraintSpec" title="Link to this definition">¶</a></dt>
@@ -439,22 +470,22 @@ validated to form a valid model.</p>
 
 <dl class="py attribute">
 <dt class="sig sig-object py" id="finance_opt.ConstraintSpec.leverage_limit">
-<span class="sig-name descname"><span class="pre">leverage_limit</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">float</span><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><span class="pre">None</span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">None</span></em><a class="headerlink" href="#finance_opt.ConstraintSpec.leverage_limit" title="Link to this definition">¶</a></dt>
+<span class="sig-name descname"><span class="pre">leverage_limit</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">float</span><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><span class="pre">None</span></em><a class="headerlink" href="#finance_opt.ConstraintSpec.leverage_limit" title="Link to this definition">¶</a></dt>
 <dd></dd></dl>
 
 <dl class="py attribute">
 <dt class="sig sig-object py" id="finance_opt.ConstraintSpec.max_turnover">
-<span class="sig-name descname"><span class="pre">max_turnover</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">float</span><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><span class="pre">None</span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">None</span></em><a class="headerlink" href="#finance_opt.ConstraintSpec.max_turnover" title="Link to this definition">¶</a></dt>
+<span class="sig-name descname"><span class="pre">max_turnover</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">float</span><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><span class="pre">None</span></em><a class="headerlink" href="#finance_opt.ConstraintSpec.max_turnover" title="Link to this definition">¶</a></dt>
 <dd></dd></dl>
 
 <dl class="py attribute">
 <dt class="sig sig-object py" id="finance_opt.ConstraintSpec.factor_bounds">
-<span class="sig-name descname"><span class="pre">factor_bounds</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">dict</span><span class="p"><span class="pre">[</span></span><span class="pre">str</span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">tuple</span><span class="p"><span class="pre">[</span></span><span class="pre">float</span><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><span class="pre">None</span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">float</span><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><span class="pre">None</span><span class="p"><span class="pre">]</span></span><span class="p"><span class="pre">]</span></span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">None</span></em><a class="headerlink" href="#finance_opt.ConstraintSpec.factor_bounds" title="Link to this definition">¶</a></dt>
+<span class="sig-name descname"><span class="pre">factor_bounds</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">dict</span><span class="p"><span class="pre">[</span></span><span class="pre">str</span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">tuple</span><span class="p"><span class="pre">[</span></span><span class="pre">float</span><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><span class="pre">None</span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">float</span><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><span class="pre">None</span><span class="p"><span class="pre">]</span></span><span class="p"><span class="pre">]</span></span></em><a class="headerlink" href="#finance_opt.ConstraintSpec.factor_bounds" title="Link to this definition">¶</a></dt>
 <dd></dd></dl>
 
 <dl class="py attribute">
 <dt class="sig sig-object py" id="finance_opt.ConstraintSpec.sector_bounds">
-<span class="sig-name descname"><span class="pre">sector_bounds</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">dict</span><span class="p"><span class="pre">[</span></span><span class="pre">str</span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">tuple</span><span class="p"><span class="pre">[</span></span><span class="pre">float</span><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><span class="pre">None</span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">float</span><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><span class="pre">None</span><span class="p"><span class="pre">]</span></span><span class="p"><span class="pre">]</span></span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">None</span></em><a class="headerlink" href="#finance_opt.ConstraintSpec.sector_bounds" title="Link to this definition">¶</a></dt>
+<span class="sig-name descname"><span class="pre">sector_bounds</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">dict</span><span class="p"><span class="pre">[</span></span><span class="pre">str</span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">tuple</span><span class="p"><span class="pre">[</span></span><span class="pre">float</span><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><span class="pre">None</span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">float</span><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><span class="pre">None</span><span class="p"><span class="pre">]</span></span><span class="p"><span class="pre">]</span></span></em><a class="headerlink" href="#finance_opt.ConstraintSpec.sector_bounds" title="Link to this definition">¶</a></dt>
 <dd></dd></dl>
 
 <dl class="py method">
@@ -603,7 +634,7 @@ validated to form a valid model.</p>
 
 <dl class="py attribute">
 <dt class="sig sig-object py" id="finance_opt.ObjectiveSpec.risk_aversion">
-<span class="sig-name descname"><span class="pre">risk_aversion</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">float</span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">None</span></em><a class="headerlink" href="#finance_opt.ObjectiveSpec.risk_aversion" title="Link to this definition">¶</a></dt>
+<span class="sig-name descname"><span class="pre">risk_aversion</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">float</span></em><a class="headerlink" href="#finance_opt.ObjectiveSpec.risk_aversion" title="Link to this definition">¶</a></dt>
 <dd></dd></dl>
 
 </dd></dl>
@@ -787,22 +818,22 @@ validated to form a valid model.</p>
 
 <dl class="py attribute">
 <dt class="sig sig-object py" id="finance_opt.OptimizationProblem.objective">
-<span class="sig-name descname"><span class="pre">objective</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="reference internal" href="#finance_opt.ObjectiveSpec" title="finance_opt.ObjectiveSpec"><span class="pre">ObjectiveSpec</span></a></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">None</span></em><a class="headerlink" href="#finance_opt.OptimizationProblem.objective" title="Link to this definition">¶</a></dt>
+<span class="sig-name descname"><span class="pre">objective</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="reference internal" href="#finance_opt.ObjectiveSpec" title="finance_opt.ObjectiveSpec"><span class="pre">ObjectiveSpec</span></a></em><a class="headerlink" href="#finance_opt.OptimizationProblem.objective" title="Link to this definition">¶</a></dt>
 <dd></dd></dl>
 
 <dl class="py attribute">
 <dt class="sig sig-object py" id="finance_opt.OptimizationProblem.costs">
-<span class="sig-name descname"><span class="pre">costs</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="reference internal" href="#finance_opt.TradingCostSpec" title="finance_opt.TradingCostSpec"><span class="pre">TradingCostSpec</span></a></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">None</span></em><a class="headerlink" href="#finance_opt.OptimizationProblem.costs" title="Link to this definition">¶</a></dt>
+<span class="sig-name descname"><span class="pre">costs</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="reference internal" href="#finance_opt.TradingCostSpec" title="finance_opt.TradingCostSpec"><span class="pre">TradingCostSpec</span></a></em><a class="headerlink" href="#finance_opt.OptimizationProblem.costs" title="Link to this definition">¶</a></dt>
 <dd></dd></dl>
 
 <dl class="py attribute">
 <dt class="sig sig-object py" id="finance_opt.OptimizationProblem.constraints">
-<span class="sig-name descname"><span class="pre">constraints</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="reference internal" href="#finance_opt.ConstraintSpec" title="finance_opt.ConstraintSpec"><span class="pre">ConstraintSpec</span></a></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">None</span></em><a class="headerlink" href="#finance_opt.OptimizationProblem.constraints" title="Link to this definition">¶</a></dt>
+<span class="sig-name descname"><span class="pre">constraints</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="reference internal" href="#finance_opt.ConstraintSpec" title="finance_opt.ConstraintSpec"><span class="pre">ConstraintSpec</span></a></em><a class="headerlink" href="#finance_opt.OptimizationProblem.constraints" title="Link to this definition">¶</a></dt>
 <dd></dd></dl>
 
 <dl class="py attribute">
 <dt class="sig sig-object py" id="finance_opt.OptimizationProblem.config">
-<span class="sig-name descname"><span class="pre">config</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="reference internal" href="#finance_opt.OptimizerConfig" title="finance_opt.OptimizerConfig"><span class="pre">OptimizerConfig</span></a></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">None</span></em><a class="headerlink" href="#finance_opt.OptimizationProblem.config" title="Link to this definition">¶</a></dt>
+<span class="sig-name descname"><span class="pre">config</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="reference internal" href="#finance_opt.OptimizerConfig" title="finance_opt.OptimizerConfig"><span class="pre">OptimizerConfig</span></a></em><a class="headerlink" href="#finance_opt.OptimizationProblem.config" title="Link to this definition">¶</a></dt>
 <dd></dd></dl>
 
 </dd></dl>
@@ -961,7 +992,7 @@ validated to form a valid model.</p>
 
 <dl class="py attribute">
 <dt class="sig sig-object py" id="finance_opt.OptimizationResult.diagnostics">
-<span class="sig-name descname"><span class="pre">diagnostics</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">dict</span><span class="p"><span class="pre">[</span></span><span class="pre">str</span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">float</span><span class="p"><span class="pre">]</span></span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">None</span></em><a class="headerlink" href="#finance_opt.OptimizationResult.diagnostics" title="Link to this definition">¶</a></dt>
+<span class="sig-name descname"><span class="pre">diagnostics</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">dict</span><span class="p"><span class="pre">[</span></span><span class="pre">str</span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">float</span><span class="p"><span class="pre">]</span></span></em><a class="headerlink" href="#finance_opt.OptimizationResult.diagnostics" title="Link to this definition">¶</a></dt>
 <dd></dd></dl>
 
 </dd></dl>
@@ -1110,17 +1141,17 @@ validated to form a valid model.</p>
 
 <dl class="py attribute">
 <dt class="sig sig-object py" id="finance_opt.OptimizerConfig.max_iterations">
-<span class="sig-name descname"><span class="pre">max_iterations</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">int</span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">None</span></em><a class="headerlink" href="#finance_opt.OptimizerConfig.max_iterations" title="Link to this definition">¶</a></dt>
+<span class="sig-name descname"><span class="pre">max_iterations</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">int</span></em><a class="headerlink" href="#finance_opt.OptimizerConfig.max_iterations" title="Link to this definition">¶</a></dt>
 <dd></dd></dl>
 
 <dl class="py attribute">
 <dt class="sig sig-object py" id="finance_opt.OptimizerConfig.tolerance">
-<span class="sig-name descname"><span class="pre">tolerance</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">float</span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">None</span></em><a class="headerlink" href="#finance_opt.OptimizerConfig.tolerance" title="Link to this definition">¶</a></dt>
+<span class="sig-name descname"><span class="pre">tolerance</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">float</span></em><a class="headerlink" href="#finance_opt.OptimizerConfig.tolerance" title="Link to this definition">¶</a></dt>
 <dd></dd></dl>
 
 <dl class="py attribute">
 <dt class="sig sig-object py" id="finance_opt.OptimizerConfig.constraint_penalty">
-<span class="sig-name descname"><span class="pre">constraint_penalty</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">float</span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">None</span></em><a class="headerlink" href="#finance_opt.OptimizerConfig.constraint_penalty" title="Link to this definition">¶</a></dt>
+<span class="sig-name descname"><span class="pre">constraint_penalty</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">float</span></em><a class="headerlink" href="#finance_opt.OptimizerConfig.constraint_penalty" title="Link to this definition">¶</a></dt>
 <dd></dd></dl>
 
 </dd></dl>
@@ -1259,22 +1290,22 @@ validated to form a valid model.</p>
 
 <dl class="py attribute">
 <dt class="sig sig-object py" id="finance_opt.TradingCostSpec.linear_fee_bps">
-<span class="sig-name descname"><span class="pre">linear_fee_bps</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">float</span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">None</span></em><a class="headerlink" href="#finance_opt.TradingCostSpec.linear_fee_bps" title="Link to this definition">¶</a></dt>
+<span class="sig-name descname"><span class="pre">linear_fee_bps</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">float</span></em><a class="headerlink" href="#finance_opt.TradingCostSpec.linear_fee_bps" title="Link to this definition">¶</a></dt>
 <dd></dd></dl>
 
 <dl class="py attribute">
 <dt class="sig sig-object py" id="finance_opt.TradingCostSpec.spread_bps">
-<span class="sig-name descname"><span class="pre">spread_bps</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">float</span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">None</span></em><a class="headerlink" href="#finance_opt.TradingCostSpec.spread_bps" title="Link to this definition">¶</a></dt>
+<span class="sig-name descname"><span class="pre">spread_bps</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">float</span></em><a class="headerlink" href="#finance_opt.TradingCostSpec.spread_bps" title="Link to this definition">¶</a></dt>
 <dd></dd></dl>
 
 <dl class="py attribute">
 <dt class="sig sig-object py" id="finance_opt.TradingCostSpec.turnover_penalty">
-<span class="sig-name descname"><span class="pre">turnover_penalty</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">float</span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">None</span></em><a class="headerlink" href="#finance_opt.TradingCostSpec.turnover_penalty" title="Link to this definition">¶</a></dt>
+<span class="sig-name descname"><span class="pre">turnover_penalty</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">float</span></em><a class="headerlink" href="#finance_opt.TradingCostSpec.turnover_penalty" title="Link to this definition">¶</a></dt>
 <dd></dd></dl>
 
 <dl class="py attribute">
 <dt class="sig sig-object py" id="finance_opt.TradingCostSpec.impact_coefficient">
-<span class="sig-name descname"><span class="pre">impact_coefficient</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">float</span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">None</span></em><a class="headerlink" href="#finance_opt.TradingCostSpec.impact_coefficient" title="Link to this definition">¶</a></dt>
+<span class="sig-name descname"><span class="pre">impact_coefficient</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">float</span></em><a class="headerlink" href="#finance_opt.TradingCostSpec.impact_coefficient" title="Link to this definition">¶</a></dt>
 <dd></dd></dl>
 
 </dd></dl>
@@ -1287,12 +1318,12 @@ validated to form a valid model.</p>
       <footer>
         
         <div class="related-pages">
-          <a class="next-page" href="optimization/index.html">
+          <a class="next-page" href="finance_opt/index.html">
               <div class="page-info">
                 <div class="context">
                   <span>Next</span>
                 </div>
-                <div class="title">finance_opt.optimization</div>
+                <div class="title">finance_opt.finance_opt</div>
               </div>
               <svg class="furo-related-icon"><use href="#svg-arrow-right"></use></svg>
             </a>
@@ -1340,7 +1371,10 @@ validated to form a valid model.</p>
 <li><a class="reference internal" href="#">finance_opt</a><ul>
 <li><a class="reference internal" href="#submodules">Submodules</a></li>
 <li><a class="reference internal" href="#classes">Classes</a></li>
+<li><a class="reference internal" href="#functions">Functions</a></li>
 <li><a class="reference internal" href="#package-contents">Package Contents</a><ul>
+<li><a class="reference internal" href="#finance_opt.solve_mean_variance"><code class="docutils literal notranslate"><span class="pre">solve_mean_variance()</span></code></a></li>
+<li><a class="reference internal" href="#finance_opt.optimize_mean_variance"><code class="docutils literal notranslate"><span class="pre">optimize_mean_variance()</span></code></a></li>
 <li><a class="reference internal" href="#finance_opt.ConstraintSpec"><code class="docutils literal notranslate"><span class="pre">ConstraintSpec</span></code></a><ul>
 <li><a class="reference internal" href="#finance_opt.ConstraintSpec.__class_vars__"><code class="docutils literal notranslate"><span class="pre">ConstraintSpec.__class_vars__</span></code></a></li>
 <li><a class="reference internal" href="#finance_opt.ConstraintSpec.__private_attributes__"><code class="docutils literal notranslate"><span class="pre">ConstraintSpec.__private_attributes__</span></code></a></li>

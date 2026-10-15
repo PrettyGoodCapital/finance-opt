@@ -10,6 +10,7 @@ Submodules
 .. toctree::
    :maxdepth: 1
 
+   /autoapi/finance_opt/finance_opt/index
    /autoapi/finance_opt/optimization/index
    /autoapi/finance_opt/schemas/index
 
@@ -27,8 +28,28 @@ Classes
    finance_opt.TradingCostSpec
 
 
+Functions
+---------
+
+.. autoapisummary::
+
+   finance_opt.solve_mean_variance
+   finance_opt.optimize_mean_variance
+
+
 Package Contents
 ----------------
+
+.. py:function:: solve_mean_variance(expected_returns: collections.abc.Sequence[float], covariance: collections.abc.Sequence[collections.abc.Sequence[float]], risk_aversion: float, max_iterations: int, tolerance: float) -> list[float]
+
+.. py:function:: optimize_mean_variance(problem: finance_opt.schemas.OptimizationProblem | dict[str, Any]) -> finance_opt.schemas.OptimizationResult
+
+   Solve a single-period mean-variance allocation problem.
+
+   This is phase-8.5 starter scope: the API supports objective,
+   constraints, and solver configuration while currently using a
+   quadratic closed-form approximation under the hood.
+
 
 .. py:class:: ConstraintSpec(/, **data: Any)
 
@@ -156,26 +177,18 @@ Package Contents
 
    .. py:attribute:: leverage_limit
       :type:  float | None
-      :value: None
-
 
 
    .. py:attribute:: max_turnover
       :type:  float | None
-      :value: None
-
 
 
    .. py:attribute:: factor_bounds
       :type:  dict[str, tuple[float | None, float | None]]
-      :value: None
-
 
 
    .. py:attribute:: sector_bounds
       :type:  dict[str, tuple[float | None, float | None]]
-      :value: None
-
 
 
    .. py:method:: _validate_bounds(value: float | None, info)
@@ -291,8 +304,6 @@ Package Contents
 
    .. py:attribute:: risk_aversion
       :type:  float
-      :value: None
-
 
 
 .. py:class:: OptimizationProblem(/, **data: Any)
@@ -447,26 +458,18 @@ Package Contents
 
    .. py:attribute:: objective
       :type:  ObjectiveSpec
-      :value: None
-
 
 
    .. py:attribute:: costs
       :type:  TradingCostSpec
-      :value: None
-
 
 
    .. py:attribute:: constraints
       :type:  ConstraintSpec
-      :value: None
-
 
 
    .. py:attribute:: config
       :type:  OptimizerConfig
-      :value: None
-
 
 
 .. py:class:: OptimizationResult(/, **data: Any)
@@ -587,8 +590,6 @@ Package Contents
 
    .. py:attribute:: diagnostics
       :type:  dict[str, float]
-      :value: None
-
 
 
 .. py:class:: OptimizerConfig(/, **data: Any)
@@ -705,20 +706,14 @@ Package Contents
 
    .. py:attribute:: max_iterations
       :type:  int
-      :value: None
-
 
 
    .. py:attribute:: tolerance
       :type:  float
-      :value: None
-
 
 
    .. py:attribute:: constraint_penalty
       :type:  float
-      :value: None
-
 
 
 .. py:class:: TradingCostSpec(/, **data: Any)
@@ -823,25 +818,17 @@ Package Contents
 
    .. py:attribute:: linear_fee_bps
       :type:  float
-      :value: None
-
 
 
    .. py:attribute:: spread_bps
       :type:  float
-      :value: None
-
 
 
    .. py:attribute:: turnover_penalty
       :type:  float
-      :value: None
-
 
 
    .. py:attribute:: impact_coefficient
       :type:  float
-      :value: None
-
 
 

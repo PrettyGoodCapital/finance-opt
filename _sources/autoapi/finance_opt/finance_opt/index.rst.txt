@@ -1,0 +1,19 @@
+finance_opt.finance_opt
+=======================
+
+.. py:module:: finance_opt.finance_opt
+
+
+Functions
+---------
+
+.. autoapisummary::
+
+   finance_opt.finance_opt.solve_mean_variance
+
+
+Module Contents
+---------------
+
+.. py:function:: solve_mean_variance(expected_returns: collections.abc.Sequence[float], covariance: collections.abc.Sequence[collections.abc.Sequence[float]], risk_aversion: float, max_iterations: int, tolerance: float) -> list[float]
+
