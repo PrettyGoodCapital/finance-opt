@@ -1,4 +1,3 @@
-<<<<<<< before updating
 from collections.abc import Sequence
 
 def solve_mean_variance(
@@ -8,7 +7,3 @@ def solve_mean_variance(
     max_iterations: int,
     tolerance: float,
 ) -> list[float]: ...
-=======
-class Example:
-    def __init__(self, value: str) -> None: ...
->>>>>>> after updating
