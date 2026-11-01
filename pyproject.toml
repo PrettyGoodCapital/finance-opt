@@ -1,7 +1,7 @@
 [build-system]
 requires = [
     "hatchling",
-    "hatch-rs>=0.4.1",
+    "hatch-rs>=0.4.3",
 ]
 build-backend = "hatchling.build"
 
@@ -32,7 +32,7 @@ classifiers = [
 
 dependencies = [
     "numpy>=2.4.6",
-    "pydantic>=2.13.5",
+    "pydantic>=2.14.1",
 ]
 
 [project.optional-dependencies]
