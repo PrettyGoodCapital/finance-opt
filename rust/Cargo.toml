@@ -5,7 +5,7 @@ authors = ["PrettyGoodCapital <prettygoodcapital@gmail.com>"]
 edition = "2021"
 license = "Apache-2.0"
 readme = "../README.md"
-repository = "https://github.com/prettygoodcapital/finance opt"
+repository = "https://github.com/prettygoodcapital/finance-opt"
 description = "Standard financial optimizer"
 
 [lib]
